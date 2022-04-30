@@ -36,6 +36,48 @@ Alumnos:
 	Tipo Documento: DNI
 	Número Documento: 10.432.987
 
+	-Tipos de Atributos: 
+		-Simples = como lo dice la palabra, son la calle, el número, la localidad, el apellido, aquellos que no pueden ser descompuestos.
+		-Compuestos = útiles cuando los usuarios se refieren a él como una unidad y otras veces a cada uno de sus componentes.
+		-Multivaluados = compuestos de otros atributos, ejemplo el atributo dirección puede contener a su vez, atributo calle, número y localidad.	
+		-Monovaluados = son aquellos como la fecha de nacimiento de un alumno, o el nombre de un empleado, es decir que pueden tomar un solo valor.
+		
+	Ojo -> (Una entidad puede tener atributos que no poseen ningún valor, por ejemplo el atributo dirección de e-mail puede ser nulo para una persona que no lo posea)
 
+	-Atributos claves de las entidades:
+		Las entidades casi siempre tiene uno o más atributos que identifican a una instancia de manera unívoca. Como una persona puede ser identificada por su tipo y número de documento.
+	-Conjunto de valores de los atributos (dominios):
+		Los atributos de una entidad pueden estar asociados a un conjunto posible de valores o dominio que representan los valores posibles que ese atributo puede tomar.
+		En el caso de un tipo de documento el dominio estará representado por los siguientes valores:
+			DNI (Documento Nacional de Identidad)
+			CI(Cédula de Identidad)
+			LE(Libreta de Enrolamiento)
+			LC(Libreta Cívica)
+		
+		Para el sexo de una persona:
+			F(Femenino)
+			M(Masculino)
+		Entonces podemos tener dominios de valores fijos o dominios con rangos de valores.
+	-Relaciones: abstracción que muestra la asociación entre entidades, una entidad puede estar conectada a una o más relaciones pero nunca conectada directamente a otra entidad.
+	
+	Ojo -> (Unicamente se define una relación entre dos o más tipos de objetos si dicha relación está basada en políticas, reglas o leyes que interesan al sistema que se modela.) 
+	
+		-Propiedades de una relacion: 
+			-Grado = cantidad de entidades que forman parte de la relación
+				-Unario = en donde una sola entidad forma parte de la relación.
+				-Binario = dos entidades forman parte.
+				-Ternaro = tres entidades " ..
+			-Conectividad = cantidad de instancias de un objeto que participan en la relación con otro objeto. Hablamos de la carnalidad, relaciones de tipo 1:1 o más.
+				-Relacion 1:1 = ejemplo una provincia tiene un solo gobernador y un gobernador puede gobernar una sola provincia.
+				-Relacion 1:M = en este caso una instancia de una entidad se relaciona con una o muchas instancias de la otra entidad.
+				-Relacion M:1 = similar a la definición anterior. Siempre depende de como lo veas.
+				-Relacion M:N = cada una de las instancias de la primera entidad se relaciona con una o muchas instancias de la otra entidad y viceversa es decir cada una de las instancias de la segunda entidad se relaciona con una o muchas instancias de la
+primera entidad.
+			-Condicionalidad = indica si la relación entre las entidades es obligatoria u opcional, lo que significa determinar si existen o no instancias de ambas entidades que forman parte de la relación.
+		
+		-Diagrama Entidad Relación:
+			El Modelo Relacional cuenta basicamente con dos herramientas: el Diagrama Entidad Relación, conocido con el nombre de DER y el Diccionario de Datos del Modelo Relacional.
+			
+			El Diagrama Entidad Relación es una herramienta gráfica que nos permite representar el Modelo Relacional con todas sus entidades y sus relaciones. Con el Diagrama Entidad Relación se observan los datos almacenados en el sistema y es representado como una red de entidades conectadas con relaciones.
 
 
