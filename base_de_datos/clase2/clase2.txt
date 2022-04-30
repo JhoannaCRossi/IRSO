@@ -1,0 +1,41 @@
+MODELO DE DATOS RELACIONAL
+
+	1.Modelo Entidad Relación
+	2.Entidad y Atributos
+
+	Los datos son actualmente el arma más poderosa de cualquier organización. 
+	La utilización de un modelo de datos permite diseñar bases de datos a nivel conceptual y por supuesto la formación de personal calificado.
+	El modelo Entidad/Interrelación (E/R) es un modelo conceptual que ha demostrado ser muyválido para cumplir con este objetivo, pues está a un nivel de abstracción lo suficientemente elevado como para poder diseñar cualquier base de datos con independencia de la máquina en laque se implemente.
+	El modelo E/R fue propuesto por Peter Chen en 1976, se ha ido actualizando a lo largo de los años. en base a las formas de representar objetos, pero siempre partiendo del mismo concepto:
+	"El conocimiento del mundo real que se desea representar a través de un análisis de los requisitos o especificaciones del problema"
+	El modelo E/R, como todos los modelos, consiste en un conjunto de conceptos, reglas y anotaciones que permiten formalizar la semántica del mundo real que se pretende modelar en un diagrama que denominamos esquema de la Base de Datos.
+
+	1era parte de un modelo = modelización del sistema
+	2da parte de un modelo = diseño del sistema
+	3era parte de un modelo = recolección de datos y análisis de requerimientos funcionales.
+	4ta parte = implementar la BBDD en un SGBD (Gestor de base de datos) comercial
+	5ta parte y final = diseño físico de la BBDD el cual consiste en determinar estructuras de almacenamento internas y la organización de los archivos de la misma.
+	
+	-Modelo Entidad Relacion = confección de la base de datos y muchas herramientas que aplican su teoría.
+	-Esquema Conceptual = descripción de los requerimientos del usuario incluyendo características de los datos, las restricciones y sus relaciones.
+	-Entidad = es algo que representa un objeto y que interesa al sistema, puede ser algo tangible como por ejemplo un libro, un telefono, etc, como tambien puede ser algo de existencia conceptual o un rol como ser una empresa, una sucursal, un profesor, etc.
+	-Atributo= representa lo que describimos de la entidad, por ejemplo un atributo de un libro puede ser el ISBN (International
+Standard Book Number) es el número por el cual se identifica a cualquier libro en el mundo; o el atributo de una empresa puede ser nombre, su número de cuit, su número de ingresos brutos, entre otros. Estos atributos tienen a su vez valores.
+
+Libros
+	ISBN: 968-444-399-4
+	Nombre: SISTEMA DE BASES DE DATOS
+	Autor: Rames A Elmasri, Shamkant
+	Idioma original: Inglés
+	Editorial: Prentice Hall
+
+Alumnos:
+	Apellido: De la Sierra
+	Nombre: Antonio Raúl
+	Fecha de Nacimiento: 10/02/1955.
+	Tipo Documento: DNI
+	Número Documento: 10.432.987
+
+
+
+
