@@ -1,0 +1,79 @@
+- Elementos de un Diagrama Entidad Relación
+	-Entidades = son uno de los elementos que forman parte de un DER, una entidad es representada con un rectángulo donde en su interior se escribe el nombre de la entidad, según el autor que se consulte, en el DER pueden o no estar incluidos los atributos de la entidad.
+	-Relaciones = otro de los elementos que forman parte de un DER, y son representados mediante un rombo, donde en su
+interior se escribe el nombre de la relación, para este nombre se utiliza o un verbo que representa la asociación entre las dos entidades que relaciona o el nombre de las dos entidades separadas por un guión.
+
+	1.-	Medicos(Cuadrado) -> Tiene(Rombo) -> Pacientes(Cuadrado)
+	2.-	Medicos(Cuadrado) -> Medicos-Pacientes(Rombo) -> Pacientes(Cuadrado)
+	 	*Relación de grado binario
+	 	*Muchos a Muchos
+	 	
+	 	Entonces = Medicos(Cuadrado)-> 1,M -> Medicos-Pacientes(Rombo) -> 1,N -> Pacientes(Cuadrado)
+	 	Se lee =  un médico tiene uno o muchos pacientes (N) y un paciente tiene uno o muchos médicos (M).
+	 	
+Ejemplo uno a uno= 
+		Esposos(Cuadrado) -> Tiene(Rombo) -> Esposas(Cuadrado)
+		*1 a 1
+		
+		Entonces = Esposos(Cuadrado) -> 1,1 -> Tiene(Rombo) -> 1,1 -> Esposas(Cuadrado)
+	 	Se lee =  un esposo esta relacionado como mínimo con una esposa y como máximo con una esposa y lo mismo para el esposo.
+	 	
+Ejemplo 1 a Muchos= 
+		Proyectos(Cuadrado) -> Trabaja(Rombo) -> Empleados(Cuadrado)
+		*1 a 1 y 1 a M
+		
+		Entonces = Esposos(Cuadrado) -> 1,1 -> Trabaja(Rombo) -> 1,M -> Empleados(Cuadrado)
+	 	Se lee =  un empleado trabaja en un proyecto como mínimo y un proyecto como máximo y en un proyecto trabajan uno o muchos empleados.
+	 	
+Ejemplo 1 a Muchos=
+		Facturas(Cuadrado) -> Tiene(Rombo) -> Clientes(Cuadrado)
+		*1 a M y 1 a 1
+		
+		Entonces = Facturas(Cuadrado) -> 1,1 -> Tiene(Rombo) -> 1,M -> Clientes(Cuadrado)
+	 	Se lee =  Una factura le pertenece a un cliente como mínimo y a un cliente como máximo, y un cliente tiene una factura como mínimo y muchas facturas como máximo
+	 	
+Ejemplo Muchos a Muchos= 
+		Canciones(Cuadrado) -> Tiene(Rombo) -> Compositores(Cuadrado)
+		*1 a M y 1 a M
+		
+		Entonces = Canciones(Cuadrado) -> 1,1 -> Tiene(Rombo) -> 1,M -> Compositores(Cuadrado)
+	 	Se lee =  una cancion fue compuesta por uno o muchos compositores y un compositor puede ser el autor de una o muchas canciones.
+	 	
+Ejemplos con condicionales= 
+		Alumnos(Cuadrado) -> Tiene(Rombo) -> Materias Aprobadas(Cuadrado)
+		*1 a 1 y 0 a M
+		
+		Entonces = Alumnos(Cuadrado) -> 1,1 -> Tiene(Rombo) -> 0,M -> Materias Aprobadas(Cuadrado)
+	 	Se lee =  un alumno no tiene aprobada ninguna o muchas materias, ninguna puede ser para el caso de un alumno que recién se inscribe en primer año ytodavía no aprobó ningún final.
+
+		Empleado(Cuadrado) -> Tiene(Rombo) -> Tarjeta de Crédito Corporativa(Cuadrado)
+		*1 a 1 y 0 a M
+		
+		Entonces = Empleado(Cuadrado) -> 1,1 -> Tiene(Rombo) -> 0,1 -> Tarjeta de Crédito Corporativa(Cuadrado)
+	 	Se lee =  un empleado puede o no tener una Tarjeta de Crédito Corporativa y una Tarjeta de Crédito Corporativa le pertenece a un solo empleado de la empresa.
+	 	
+Relación de Grado Unario =
+		
+		Materias(Cuadrado) -> Tiene Correlativa(Rombo)
+		Materias(Cuadrado) <- Tiene Correlativa(Rombo) 
+		
+		Entonces = Materias(Cuadrado) -> 0,N -> Tiene Correlativa(Rombo) 
+			   Materias(Cuadrado) <- 0,M <- Tiene Correlativa(Rombo)
+		Se lee = es condicional en ambos sentidos porque existen materias que no tienen correlativas como es el caso de Programación I o Estructura de un Computador y para la relación en el otro sentido Seminario no es correlativa de ninguna otra materia.
+		
+Relación Ternaria =
+
+		Proyecto(Cuadrado) -> Tiene(Rombo) -> Empleado(Cuadrado) & Tiene(Rombo) -> Producto(Cuadrado)
+		Empleado(Cuadrado) -> Tiene(Rombo) -> Proyecto(Cuadrado) & Tiene(Rombo) -> Producto(Cuadrado)
+		Producto(Cuadrado) -> Tiene(Rombo) -> Empleado(Cuadrado) & Tiene(Rombo) -> Proyecto(Cuadrado)
+
+		
+	Entonces= 
+	Proyecto(Cuadrado) -> 1,M -> Tiene(Rombo) -> 1,N -> Empleado(Cuadrado) & Tiene(Rombo) -> 1,P -> Producto(Cuadrado)
+	Empleado(Cuadrado) -> 1,N -> Tiene(Rombo) -> 1,M -> Proyecto(Cuadrado) & Tiene(Rombo) -> 1,P -> Producto(Cuadrado)
+	Producto(Cuadrado) -> 1,P -> Tiene(Rombo) -> 1,N -> Empleado(Cuadrado) & Tiene(Rombo) -> 1,M -> Proyecto(Cuadrado)
+	
+	Se lee = un proyecto esta relacionado con un empleado y un producto, un empleado está relacionado con un proyecto y con un producto y un producto está relacionado con un proyecto y con un empleado, es decir que cada uno de las tres entidades de la relación está relacionada con los otros dos.
+
+
+		
