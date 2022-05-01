@@ -1,0 +1,5 @@
+Repaso de Condicionalidad
+
+Decimos que una relación es condicional si alguno o algunos de los elementos de un conjunto pueden no estar relacionados con otro u otros elementos del otro conjunto.
+
+La relación entre Equipos de Futbol y Director Técnico es una relación obligatoria, todos los equipos tienen su Director Técnico y aunque la estructura de la relación permitiese que sea opcional no se daría nunca porque como dijimos antes todo los equipos tienen su director técnico.
