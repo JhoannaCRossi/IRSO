@@ -1,0 +1,81 @@
+Tipos de Objeto Asociativo
+
+Estos tipos de elementos aparecen cuando en una relación además de conectarlas entidades posee atributos propios, es decir
+que contiene información que existe siempre y cuando exista la relación y en el caso que la relación no exista, tampoco existirá el TOA.
+
+	Este en el DER, es representado por un rectángulo que esta conectado a través de una flecha.
+	
+	En el ejemplo siguiente tenemos las entidades locador y locatario que está conectada por una relación, de esa misma relación surge el contrato de alquiler que representa el Tipo de Objeto Asociativo.
+	
+1)	Locadores(Rectangulo) -> 1,M -> rombo -> 1,N -> Locatarios(Rectangulo)
+		contratos de alquiler(cuadrado, flecha punta negra hacia triangulo)
+		
+	"El triangulo de relación deja de llevar nombre en su interior porque al haber un tipo de objeto asociativo, éste representa a la relación más aquellos atributos que le pertenecen a la relación."
+	
+2) 	Medicos(Rectangulo) -> 1,M -> rombo -> 1,N -> Pacientes(Rectangulo)
+		Tratamientos(cuadrado, flecha punta negra hacia rombo)
+	En este caso un tratamiento existe, mientras exista un paciente y un medico que lo atienda.
+
+3) 	Empleados(Rectangulo) -> 1,M -> rombo -> 1,N -> Proyectos(Rectangulo)
+		Hojas de Actividad(cuadrado, flecha punta negra hacia rombo)
+	En este caso un empleado trabaja en un proyecto, de este trabajo se completa diariamente una planilla de hojas de actividad donde figura la tarea realizada por un empleado en un proyecto
+
+4) 	Materias(Rectangulo) -> 1,M -> rombo -> 1,N -> Profesores(Rectangulo)
+		Cursos(cuadrado, flecha punta negra hacia rombo)
+	En este caso un curso es creado cuando un profesor dicta una materia, curso tiene atributos que le son propios como por ejemplo el día de la semana y el horario de la clase, el aula asignada, etc
+
+Tipos de entidades débiles
+	Aquellos que en la entidad no existen atributos claves propios, se les llama entidades débiles. Estas entidades se identifican por su relación con otras entidades en combinación con algunos de los valores de sus atributos. Esta otra entidad es el propietario identificador y llamamos al tipo de relación que conecta un tipo de entidad débil con su propietario el vínculo identificador.
+	Estos tipos de entidades siempre tienen una participación total ya que un tipo de entdiad débil no se puede identificar sin una entidad propietaria.
+	Un ejemplo claro para entender más esto es una licencia de conducir; aunque no siempre la restricción de participación total significa que exista la entidad débil ya que una entidad Licencia de Conductor debe su existencia al propietario de la licencia pero no es entidad débil pues Licencia de conductor tiene atributo clave propio que es el
+número de la licencia.
+	Los tipos de entidades débiles por lo general tienen una clave parcial que es el conjunto de atributos que pueden identificar a las entidades débiles relacionadas con la entidad propietaria.
+	En el diagrama de entidad relación
+		Entidad propietaria(reactangulo) -Doble linea hacia lo debil -(rombo doble) - Entidad Debil(rectangulo)
+
+
+Supertipo, Subtipo y Especialización
+	Algunas entidades tienen varias subagrupaciones que explicitamente representan su importancia en la base de datos.
+	El conjunto de instancias de cada una de estas agrupaciones es un subconjunto de la entidad.
+	Ejemplo:
+		Dada la entidad empleado existen diferentes subgrupos: secretarias, técnicos, administrativos, etc., lo que significa que toda entidad que sea miembro de una de estas subagrupaciones también será un empleado.
+
+	"Cada una de estas subagrupaciones es un subtipo de la entidad empleado y empleado es supertipo de cada uno de estos subtipos"
+	
+	Empleado(rectangulo. SuperTipo) - salen tres rectas a 3 rectangulos que son subtipos (Secretarias, Tecnicos, Ingenieros).
+	
+Herencia de atributos en las relaciones supertipo/subtipo.
+
+	Un importante concepto de las relaciones supertipo/subtip es que un subtipo debe poseer atributos que le son propios además de los que hereda como miembro del supertipo.
+	Entonces podemos decir que un subtipo hereda todos los atributos del supertipo. 
+
+Especialización. 
+	La especialización es el hecho de agrupar un conjunto de subtipos de un supertipo. Este agrupamiento se produce teniendo en cuenta alguna característica distintiva del subtipo.
+	
+	En la herencia tenemos de ejemplo
+	Empleados(rectangulo. SuperTipo) - sale recta hacia el subtipo Secretari, pero sale una especial hacia una especialización que seria empleados técnicos(rectangulo) y de el salen dos rectas hacia 2 rectangulos que son subtipos (Tecnicos, Ingenieros).
+	
+Técnica para construir un DER.
+
+	"Para construir un DER puede utilizarse como regla de práctica básica el tomar los sustantivos importantes como entidades y los verbos importantes como relaciones":
+1-Identificar las entidades.
+2-Individualizar identificadores únicos de las entidades, si la entidad posee una sola instancia, este elemento no
+es una entidad.
+3-Identificar relaciones entre objetos.
+4-Clasificar relaciones según conceptos de grado, conectividad, condicionalidad.
+5-Identificar tipos de objetos asociativos.
+6-Identificar supertipos y subtipos, agrupando objetos que posean atributos comunes y alguna condición de diferenciación
+7-Dibujar el DER según la notación de la herramienta.
+8-Eliminar elementos redundantes o fuera del alcance del sistema
+
+Reglas de construcción de un DER.
+
+1-Una entidad puede estar conectada a una o más relaciones.
+2-Una relación debe conectarse a una o más entidades.
+3-Una entidad no puede estar conectada directamente a otra entidad.
+4-Una relación no puede estar conectada directamente a otra relación.
+5-No pueden existir distintos elementos con el mismo nombre.
+6-No incluir relaciones irrelevantes para el sistema.
+7-Eliminar relaciones que no puedan existir en el mundo real.
+8-Eliminar relaciones redundantes.
+9-Si una entidad sólo tiene su identificador como atributo, eliminarla e incluir la información en otra entidad.
