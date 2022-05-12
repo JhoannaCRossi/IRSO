@@ -1,0 +1,19 @@
+DICCIONARIO DE DATOS.
+Vamos a utilizar el diccionario de datos para describir los elementos que forman parte de un DER.
+Agregamos una @ a los atributos que sirvan como identificación única.
+
+- Objetos = @identificador + atributos.
+- Tipo de objeto asociativo = {@identificador1} + {@identificador2} + atributos.
+- Relación
+       @identificador1 + @identificador2 (caso 1:1).
+       {@identificador1} + @identificador2 (caso N:1).
+       {@identificador1} + {@identificador2} (caso m:n).
+
+- Super tipo = {atributos comunes} + {subtipos}.
+- Sub tipo = idem objetos
+
+Veamos algunos ejemplos.
+
+ALUMNOS = @nro-alumno + tipo_doc + nr_doc + apellido + nombre + domicilio + localidad + codigo_postal.
+LIBROS = @nro_libro + nombre + autor + idioma original + fecha primera edicion.
+PACIENTES = @nro_historia_clinica + apellido + nombre + domicilio + localidad + codigo_postal + obra_social
