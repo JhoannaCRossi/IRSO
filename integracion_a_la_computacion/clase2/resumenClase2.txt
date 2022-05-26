@@ -1,0 +1,13 @@
+Repaso de Estructuras Ciclicas:
+
+-Uso del IF: esta estructura posee la caracteristica que presenta una condición durante el ciclo del programa. Si esa condición se cumple permite un camino de acción, caso contrario determina otro camino.
+
+-Uso del While: esta estructura posee la característica que presenta un ciclo continuo durante el ciclo del programa mantenido por una condición al inicio de dicho ciclo. Si dicha condición se cumple permite terminar el ciclo y mantenerse dentro del mismo, csaso contrario sale del ciclo en el inicio del mismo.
+
+-Uso del Do-While: esta estructura es similar a la anterior y posee la característica que presenta un ciclo continuo previo a la condición que se encontrará al final de dicho ciclo. Si esa condición se cumple permite mantenerse dentro de ese ciclo, caso contrario sale del ciclo permitiendo que al menos se cumpla una vez la acción.
+
+-Uso del For: esta estructura posee la característica que presenta un ciclo continuo durante el ciclo del programa mantenido por una condición al final de dicho ciclo. Si esa condición se cumple permite mantenerse dentro de ese ciclo, caso contrario sale del ciclo permitiendo que la secuencia continúe.
+
+-Uso del Case-Swich: esta estructura posee la característica que presenta un ciclo continuo durante el ciclo del programa mantenido por una condición al final de dicho ciclo. Si esa condición se cumple permite mantenerse dentro de ese ciclo, caso contrario sale del ciclo permitiendo que la secuencia continue.
+
+
