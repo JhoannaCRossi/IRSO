@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+/home/jcastellanos/Documentos/OTROS/irsoGit/integracion_a_la_computacion/.metadata/.plugins/org.eclipse.jdt.core
-3160936958.index
-842337891.index
