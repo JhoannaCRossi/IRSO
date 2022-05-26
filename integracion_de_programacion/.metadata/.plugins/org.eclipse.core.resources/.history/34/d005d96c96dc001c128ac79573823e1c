@@ -1,0 +1,22 @@
+package ejercicio3;
+
+import java.util.Scanner;
+
+/* Desarrollar el código para poder leer dos String desde el teclado, 
+ * concatenarlo (unirlos) y luego imprimirlo por pantalla
+ * */
+
+public class Main {
+	public static void main(String[] args){
+		//instancio scanner
+		Scanner sc = new Scanner(System.in);
+		
+		String one, two;
+		
+		one = sc.nextLine();
+		two = sc.nextLine();
+		System.out.println(one);
+		System.out.println(two);
+
+	}
+}

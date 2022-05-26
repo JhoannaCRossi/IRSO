@@ -1,0 +1,24 @@
+package ejercicio3;
+
+import java.util.Scanner;
+
+/* Desarrollar el código para poder leer dos String desde el teclado, 
+ * concatenarlo (unirlos) y luego imprimirlo por pantalla
+ * */
+
+public class Main {
+	public static void main(String[] args){
+		//instancio scanner
+		Scanner sc = new Scanner(System.in);
+		
+		String one, two, input;
+		
+		for (int i = 0; i < 2; i++) {
+			System.out.println("Please , give me your" + i + " word ");
+			input = sc.next();
+		}
+		System.out.println(one);
+		System.out.println(two);
+
+	}
+}

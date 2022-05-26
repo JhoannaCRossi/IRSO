@@ -26,3 +26,14 @@ hs_err_pid*
 replay_pid*
 
 /.metadata/
+
+**/target/
+/target/
+*/target/*
+.classpath
+.project
+.settings
+
+
+*.iml
+*.idea

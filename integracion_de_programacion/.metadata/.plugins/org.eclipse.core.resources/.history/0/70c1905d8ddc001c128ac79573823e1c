@@ -1,0 +1,20 @@
+package ciclos;
+
+/* Desarrollar el código para lograr incrementar una variable desde el 1 hasta
+ * al 199 con lo visto en la clase anterior. Durante cada ciclo, multiplicar el
+ * valor del índice por sí mismo e imprimir el resultado total en pantalla al
+ * finalizar. Utilizar variables enteras
+ * */
+
+public class Main {
+	public static void main(String[] args){
+		int contador = 0;
+		
+		while(contador < 199) {
+			contador++; // incremento de la variable
+			System.out.println("Multiplicación por si mismo dentro del ciclo, vuelta "+contador+" :");
+			System.out.println(contador*contador + " \n");
+		}
+		
+	}
+}
