@@ -28,7 +28,7 @@
          - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassThree/src/practice1)
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassThree/src/practice2) 
          - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassThree/src/practice3)
-       - Clase 4: [Ejercicios Propuestos con Ingreso de Datos por Teclado, Condicionales, Ciclos...](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFour/src)
+      - Clase 4: [Ejercicios Propuestos con Ingreso de Datos por Teclado, Condicionales, Ciclos...](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFour/src)
          - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFour/src/practice1)
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFour/src/practice2) 
 
