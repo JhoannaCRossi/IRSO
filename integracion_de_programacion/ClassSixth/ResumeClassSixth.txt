@@ -1,0 +1,28 @@
+¿Qué es un Vector o Arreglo?
+Los arreglos se pueden definir como objetos en los que podemos guardar más de una variable, es decir, al tener un único arreglo, este puede guardar múltiples variables de acuerdo a su tamaño o capacidad, es importante recordar que las variables guardadas deben ser del mismo tipo, por ejemplo: Si tenemos un arreglo de tipo Numérico que puede almacenar 10 variables, solo podrá almacenar 10 números diferentes, no otras variables como caracteres o Strings.
+
+Existen 2 tipos de arreglos, los unidimensionales, y los multidimensionales (generalmente 2 dimensiones y se les denomina matrices), en esta lección veremos cómo declarar y utilizar los arreglos unidimensionales, estos son más sencillos y fáciles de comprender, y pueden servirnos para muchas aplicaciones
+
+Ejemplos:
+String array[]; //donde array es un arreglo que guardara variables tipo Strings
+Doublearray2[]; //donde array2 es un arreglo que guardara variables tipo double
+Int[] array3; //donde array3 es un arreglo que guardara variables tipo
+int(numericas)
+Definir tamaño de arreglos:
+Para asignar a un arreglo su tamaño o capacidad, se hace de la siguiente forma:
+arreglo = new tipo_dedato[capacidad]
+
+Ejemplo:
+array = newString[10]; //el arreglo array guardara hasta un máximo de 10 variables de tipo String
+
+Para realizar una declaración de un arreglo y definir su tamaño en una misma línea se puede usar la siguiente estructura:
+String array[] = newString[10]; //se declara un arreglo y se asigna su tamaño en una misma línea.
+
+Asignación de valores a elementos del array:
+Una vez se tiene declarado un arreglo, y al mismo se le ha asignado un tamaño o capacidad, podemos acceder a los datos dentro del mismo y asignarle valores. Para hacer esto es necesario proceder de la siguiente forma:
+arreglo[indicador]=valor
+
+Ejemplos:
+array[0] = "Ejemplo"; // Aquí se asigna el valor "Ejemplo" a un arreglo de String en su primera posición
+array2[3] = 5; // Se asigna un valor de 5 al 4to elemento de un arreglo numérico;
+Es importante recordar que para acceder a los datos guardados en un arreglo se utilizan indicadores iniciando desde el “0”, si un arreglo tiene un tamaño de 10 variables, entonces se puede acceder a sus elementos con los indicadores del 0 al 9.
