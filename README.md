@@ -33,6 +33,7 @@
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFour/src/practice2) 
       - Clase 5: [POO](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassFifth/ClassFifthTheoretical.txt)
       - Clase 6: [Vectores y Matrices](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassSixth)
+      - TP1: [TP1](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/TP1)
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
