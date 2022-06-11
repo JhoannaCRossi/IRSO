@@ -5,18 +5,18 @@ Existen 2 tipos de arreglos, los unidimensionales, y los multidimensionales (gen
 
 Ejemplos:
 String array[]; //donde array es un arreglo que guardara variables tipo Strings
-Doublearray2[]; //donde array2 es un arreglo que guardara variables tipo double
-Int[] array3; //donde array3 es un arreglo que guardara variables tipo
-int(numericas)
+Double array2[]; //donde array2 es un arreglo que guardara variables tipo double
+Int[] array3; //donde array3 es un arreglo que guardara variables tipo int(numericas)
+
 Definir tamaño de arreglos:
 Para asignar a un arreglo su tamaño o capacidad, se hace de la siguiente forma:
-arreglo = new tipo_dedato[capacidad]
+arreglo = new tipo_de_dato[capacidad]
 
 Ejemplo:
-array = newString[10]; //el arreglo array guardara hasta un máximo de 10 variables de tipo String
+array = new String[10]; //el arreglo array guardara hasta un máximo de 10 variables de tipo String
 
 Para realizar una declaración de un arreglo y definir su tamaño en una misma línea se puede usar la siguiente estructura:
-String array[] = newString[10]; //se declara un arreglo y se asigna su tamaño en una misma línea.
+String array[] = new String[10]; //se declara un arreglo y se asigna su tamaño en una misma línea.
 
 Asignación de valores a elementos del array:
 Una vez se tiene declarado un arreglo, y al mismo se le ha asignado un tamaño o capacidad, podemos acceder a los datos dentro del mismo y asignarle valores. Para hacer esto es necesario proceder de la siguiente forma:
