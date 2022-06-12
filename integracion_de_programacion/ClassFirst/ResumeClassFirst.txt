@@ -1,0 +1,44 @@
+Programación Orientada a Objetos
+
+	En la historia, el primer lenguaje de programación Orientado a objetos puro fue SmallTalk, donde todo lo que se crea son clases y objetos, incluyendo las variables de tipos más simples. Pero tenia el problema de que las variables eran públicas podían accederse desde cualquier lugar, incluyendo la posibilidad de cambiar su contenido. Se avanzó y se logro ocultar la información en este lenguaje.
+	En 1995 se crea Java, con la intención de reutilización de código como pilar, y evitando los principales problemas de C++, como por ejemplo el acceso directo a la memoria dinámica. Java es totalmente Orientado a Objetos, se fundamenta en el uso de bytecode (código de bajo nivel, portable e interpretable) y una máquina virtual accesible para todo el mundo que ejecuta bytecodes.
+	
+¿Qué trata de resolver el paradigma orientado a objetos?
+	-Distinta abstracción del mundo = la programación clásica se centra en el comportamiento, normalmente representado por verbos, mientras que nuestra mente se centra en los seres, a los que mormalmente, identificamos con sustantivos.
+	
+	-Dificultad en modificación y actualización = Los programas suelen tener datos compartidos por varios subprogramas, esto puede provocar que cualqueir ligera modificación en un módulo afecte indirectamente al resto.
+	
+	-Dificultad en mantenimiento = es complicado encontrar todos lo errores en grandes aplicaciones, lo que origina que muchois no aparezcan hasta estar la aplicación en funcionamiento.
+	
+	-Dificultad en reutilización = normalmente las subrutinas son demasiado dependientes del contexto de un programa como para poder aprovecharlas en un nuevo programa.
+
+¿Paradigma?
+	Colección de modelos conceptuales que juntos modelan el proceso de diseño y determinan, al final, la estructura de un programa. O lo mismo que decir que un paradigma engloba u nuevo modelo innovador de resolver un problema que en la actualidad no pueden ser resueltos y que es posible implementarlo como una nueva solución a los futuros planteos que surjen.
+	Tiene una estrecha relación con la formalización de determinados lenguajes en su momento de definición.
+
+¿Paradigma actualmente más utilizado?
+	Orientado a Objetos (OO). El núcleo central de este paradigma es la unión de datos y procesamiento en una entidad llamada objeto, relacionable a su vez con otras entidades objetos.
+	Hay que nombrar un paradigma que surgio luego del OO y que es importante el cual esw SOA o Arquitectura orientada al Servicio, la base es OO pero se le suma XML junto con una seria de pequeñas mejoras, para llegar a lo que se conoce com WEB SERVICES.
+	
+En resumen:
+
+	POO=
+		-Conceptos de clase y objeto, que proporcionan una abstracción del mundo centrada en los seres y no en los verbos.
+		-Los datos aparecen encapsulados dentro del concepto de clase. El acceso a los datos se produce de manera controlada e independiente de la representación final de los mismos.
+	
+COnsecuencia directa de poo:
+	Se facilita el mantenimiento y la evolución de los sistemas, al desaparecer las dependencias entres distintas partes del sistema.
+
+Conceptos:
+
+	Variables = son elementos / entidades que es posible vaciar su contenido en función del tiempo. En JAVA una variable es todo colaborador interno (variables de instancia y de clase), externos (parámetros) y a los nombres locales en los métodos (variables locales).
+	Expresiones = es una combinación de variables, operadores y envíos de mensajes que evalúan un valor.
+	Constantes = son una característica de una entidad. Se utiliza principalmente pra poder asignar un valor específico que se utiliza varias veces a lo largo de un algoritmo, y que al mismo tiempo mantiene su valor fijo.
+	Static = los atributos miembros de una clase pueden ser atributos de clase o atributos de instancia; son atributos de clase si se usa la palabra clave static: en ese caso la variable es única para todas las instancias de la clase (ocupa un unico lugarf en memoria).
+	Final = de tipo constante no admite cambios después de su declaración y asignación de valor "final" determina que un atributo no puede ser sobreescrito o redefinido. Una clase final no puede tener clases que la hereden.
+	
+	private final double GRAVEDAD = 9.81 -> constante de objeto, cada objeto tendra su espacio en memoria con un contenido invariable.
+	private static final double GRAVEDAD = 9.81 -> constante de clase, existe un único espacio en memoria, compartido por los objetos de la clase.
+	
+	
+ 

@@ -1,3 +1,5 @@
+-Bloque: es una secuencia de sentencias encerradas entre llaves y/o paréntesis y puede ser usado en cualquier lugar donde va una sentencia. En general se utilizan como el cuerpo de las estructuras aunque también se pueden utilizar solos.
+
 Repaso de Estructuras Ciclicas:
 
 -Uso del IF: esta estructura posee la caracteristica que presenta una condición durante el ciclo del programa. Si esa condición se cumple permite un camino de acción, caso contrario determina otro camino.
@@ -9,5 +11,11 @@ Repaso de Estructuras Ciclicas:
 -Uso del For: esta estructura posee la característica que presenta un ciclo continuo durante el ciclo del programa mantenido por una condición al final de dicho ciclo. Si esa condición se cumple permite mantenerse dentro de ese ciclo, caso contrario sale del ciclo permitiendo que la secuencia continúe.
 
 -Uso del Case-Swich: esta estructura posee la característica que presenta un ciclo continuo durante el ciclo del programa mantenido por una condición al final de dicho ciclo. Si esa condición se cumple permite mantenerse dentro de ese ciclo, caso contrario sale del ciclo permitiendo que la secuencia continue.
+
+-Uso del For Each: este ciclo sirve para recorrer estructuras tales como listas y otras colecciones de objetos. Una variación del for para ser usada con estructuras iterables. Es una syntax sugar, endulzar la sintaxis sin agregarle una nueva funcionalidad.
+
+
+
+
 
 
