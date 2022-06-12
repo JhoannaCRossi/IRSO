@@ -22,7 +22,7 @@
       - Clase 7: [Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase7)
       - Clase 8: [Ejercicios Propuestos2](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase8)
  - [Integración de Programación 2022 - JAVA](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion)
-      - Clase 1: [Presentación y Infografía](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFirst/resumeClass1.txt)
+      - Clase 1: [Presentación, Infografía, Teoría Java](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFirst/resumeClass1.txt)
       - Clase 2: [Repaso de Estructuras Ciclicas](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassSecond/resumeClass2.txt)
       - Clase 3: [Ejercicios Propuestos de Estructuras Ciclicas](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassThree/src)
          - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassThree/src/practice1)
