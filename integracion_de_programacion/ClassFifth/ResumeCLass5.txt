@@ -1,0 +1,41 @@
+¿Qué es una clase?
+	De una forma muy simple podremos decir entonces que una clase es un modelo, un molde del cual obtendremos nuestros objetos con sus características. Las clases son un pilar fundamental de la programación oriendada a objetos. Permiten abstraer los datos y sus operaciones asociadas al modo de una caja negra.
+
+	Una clase es abstracta cuando se necesita tener una clase que no puede ser instanciada y que sirva de agrupar el conocimineto y comportamiento común de las subclases de este tipo.
+
+¿Qué son los Atributos de una Clase?
+	Existen los colaboradores internos, también conocidos como variables de instancia o atributos, y se definen en el cuerpo de la clase. Su definición es similar a la de cualquier variable, con la particularidad que se le puede agregar los modificadores de visibilidad.
+
+	Siempre debemos definir los atributos como privados, dado que son detalles de implementación que deberían estar siempre ocultos a los demás objetos (incluso a aquellos pertenecientes a alguna subclase). Cuando queremos exponer un atributo como público, deberíamos hacerlo a través de métodos “comandos” getter (lectura) y setter (escritura). Existe la convención de nombrar a estos métodos utilizándolos prefijos get, set o is, seguido del atributo.
+
+	En los métodos de la clase estos atributos son accedidos con la palabra this = referencia al objeto actual.
+	Los atributos estáticos son aquellos que pertenecen a la clase. Pueden ser accedidos por medio de su nombre o utilizando el nombre de la clase punto nombre del atributo.
+
+¿Qué es un método?
+	Dentro del mundo de la programación en JAVA, un método es una subrutina cuyo código es definido en una clase y puede pertenecer tanto a una clase, como es el caso de los métodos de clase o estáticos, como a un objeto, como es el caso de los métodos de instancia. Análogamente a los procedimientos en los lenguajes imperativos, un método consiste generalmente de una serie de sentencias para llevar a cabo una acción, un juego de parámetros de entrada que regularán dicha acción o, posiblemente, un valor de salida (o valor de retorno) de algún tipo.
+
+	La diferencia entre un procedimiento (generalmente llamado función si devuelve un valor) y un método es que éste último, al estar asociado con un objeto o clase en particular, puede acceder y modificar los datos privados del objeto correspondiente de forma tal que sea consistente con el comportamiento deseado para el mismo. Así, es recomendable entender a un método no como una secuencia de instrucciones sino como la forma en que el objeto es útil (el método para hacer su trabajo). Por lo tanto, podemos considerar al método como el pedido a un objeto para que realice una tarea determinada o como la vía para enviar un mensaje al objeto y que éste reaccione acorde a dicho mensaje.
+
+Overloading o Sobrecarga = mismas funciones distintos parámetros.
+
+¿Pára que se utiliza interfaces en Java?: para definir protocolos homogéneos a través de jerarquías heterogéneas.
+
+POO 
+
+	Los objetos podriamos considerarlos como una especie de capsula dividida en 3, relaciones, propiedades y métodos. Las relaciones permiten al objeto se inserte en la organización y están formadas esencialmente por punteros a otros objetos. Las propiedades distinguen un objeto determinado de los restantes que forman parte de la misma organización y tiene valores que dependen de la propiedad de que se trate. Los métodos son las operaciones que pueden realizarse sobre el objeto, que normalmente estarán incorporados en forma de programas que el objeto es capaz de ejecutar.
+	
+	-Encapsulamiento = característica fundamental de la POO
+		Existe la posibilidad de que los objetos sean inaccesibles, e impedir que otros objetos, los usuarios o incluso los programadores conozcan como está distribuida la información o que información hay disponible.
+	-Polimorfismo = otra de las caracteristicas fundamentales de este paradigma.
+		No es otra cosa que la posibilidad de construir varios métodos con el mismo nombre, pero con relación a la clase a la que pertenece cada uno, con comportamientos diferentes. Esto nos da la oportunidad de mandar un ismo mensaje a objetos de clases diferentes.
+	-Herencia = cuando la primera clase es un tipo de la segunda, se dice q es una clase heredada.
+		Se permite herenar de una sola clase. La herencia fomenta el polimorfismo, poque generalmente los lenguajes tienen ciertas reglas que fuerzan a que las subclases puedan sustituir a las superclases.
+
+DEMONIOS
+	En Java, un subproceso de demonio es un subproceso especial que admite subprocesos en segundo plano para otros subprocesos. Java utiliza estos subprocesos para fines especiales de subprocesos de usuario y recolección de basura, etc. Cuando existen, se diferencian de otros métodos porque no son heredables y porque a veces están ligados a una de las propiedades de un objeto, más que el objeto entero. Sucede cuando ocurre un determinado suceso: la asignación de un valor a una propiedad de un objeto, la lectura de un valor determinado, etc.
+	
+
+"El paradigma orientado a objetos es un filtro que se encuentra entre el problema y el modelo, que polariza el entendimiento de la situación acomodandolo a sus conceptos. Afortunadamente, el paradigma de la orientación a objetos permite que la interpretación entre la realidad, la problemática y el modelo sea muy fácil. Un objeto es tangible y fácilmente relacionado a un elemento del dominio del problema, la carga mental que implica el pasaje del modelo al problema es imperceptible."
+
+
+
