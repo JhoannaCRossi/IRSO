@@ -14,6 +14,41 @@ Repaso de Estructuras Ciclicas:
 
 -Uso del For Each: este ciclo sirve para recorrer estructuras tales como listas y otras colecciones de objetos. Una variación del for para ser usada con estructuras iterables. Es una syntax sugar, endulzar la sintaxis sin agregarle una nueva funcionalidad.
 
+¿Que es un Thread? = ejecución de un proceso. En Java para utilizar la multitarea debemos de usar la clase Thread (es decir que la clase que implementamos debe heredar de ésta). Esta clase Thread implementa la interface Runnable. 
+
+Synchronize(palabra reservada) = indica que ciertas partes del código estan sincronizadas, es decir que solamente un usbproceso puede acceder a dicho método a la vez. Cada método sincronizado posee una especia de llave que puede cerrar o abrir la puerta de acceso. 
+
+Datos primitivos y literales en Java=
+
+	Primitivos + Clase asociada Java para envolver el tipo primitivo y volverlo objeto
+		-boolean = representan valores verdadero y falso de la lógica de Bool. Clase asociada Boolean
+		-byte = representa a los número de 8 bits entre -128 y 127. Clase asociada Byte
+		-char = representa un carácter Unicode(16 bits). Clase asociada Char
+		-double = represente a los números de tipo flotante de 64 bits. Clase asociada Double
+		-float = similar al double pero con 32 bits. Clase asociada Float
+		-int = representa a los números de 32 bits enteros, entre -21474836448 y 2147483647. Clase asociada Integer
+		-long = representa los números de 64 bits, entre -9223372036854775808 y 9223372036854775807. Clase asociada Long
+		-short = representa los números de 16 bits, entre -32768 y 32767. Clase asociada Short
+		-String = si bien no es de tipo primitivo, ya que es una clase, la incluimos en este apartado dado que el lenguaje da soporta para manejar cadenas las cadenas de caracteres de forma similiar que un dato primitivo.
+		-Arrays = son colecciones indexadas de elementos de tamaño fijo y establecido en el momento de creación. Instancias de la clase Array.
+	
+Operadores Matemáticos= 
+	- +,-,/,*: suma, resta division y multiplicación. + también concatena strings
+	- %: módulo
+	- -: negación de un número
+	
+Operadores Lógicos=
+	- &, &&, |, ||, ^, !:y, y, inclusivo o exclusivo.
+	- ==, != : igualdad, desilgualdad.
+	- <, <=, >, >= menor, menor o igual, mayor, mayor o igual.
+
+Otros operadores=
+	- ++,--: incrementar o disminuir un número.
+	- =: asignación.
+	- ?: operador ternario.
+	- instanceof: operador que chequea si un objeto es instancia de una determinada clase.
+
+
 
 
 
