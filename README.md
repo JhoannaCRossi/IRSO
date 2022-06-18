@@ -33,6 +33,13 @@
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFour/src/practice2) 
       - Clase 5: [POO](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassFifth/ClassFifthTheoretical.txt)
       - Clase 6: [Vectores y Matrices](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassSixth)
+      - Clase 7: [Ejercicios Vectores y Matrices](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassSeventh)
+         - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice1)
+         - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice2) 
+         - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice3)
+         - [Práctica 4](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice4)
+         - [Práctica 5](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice5)
+         - [Práctica 6](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice6)
       - TP1: [TP1](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/TP1)
 
 ## 🔗 Links
