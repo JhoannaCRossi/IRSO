@@ -1,7 +1,11 @@
 package practice1;
 
 import java.util.Scanner;
-
+/*1.- Realizar un programa que permita leer de teclado cinco valores reales 
+ * entre 100 y -200; Luego realizar el siguiente cálculo resultado = ((valor1 * 
+ * valor2) – (valor3 * valor4)) / valor5; y por último imprimir en pantalla el 
+ * resultado.
+ */
 public class Main {
 	public static void main(String[] args){
 		//instance scanner

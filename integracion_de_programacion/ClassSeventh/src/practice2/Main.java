@@ -1,7 +1,11 @@
 package practice2;
 
 import java.util.Scanner;
-
+/* Ejercicio 2: Realizar un programa que permita obtener e imprimir el 
+ * resultado de la suma de los elementos de un vector Z de longitud k, 
+ * donde los elementos del vector son reales (considerar k=5).
+ * 
+ */
 public class Main {
 	public static void main(String[] args) {
 		

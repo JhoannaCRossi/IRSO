@@ -1,7 +1,12 @@
 package practice6;
 
 import java.util.Scanner;
-
+/*Ejercicio 6: Realizar un programa que permita obtener la suma de dos 
+ * matrices X y J de dimensión axb (a=3 y b=4). Los elementos de la matriz 
+ * son reales. El resultado debe ser impreso. Realizar la suma componente a 
+ * componente.
+ * 
+ */
 public class Main {
 
 	public static void main(String[] args) {

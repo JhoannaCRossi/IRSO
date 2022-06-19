@@ -1,5 +1,9 @@
 package practice3;
-
+/*Ejercicio 3: Realizar un programa que permita imprimir las componentes 
+ * de un vector A de longitud g cuyos elementos son caracteres. La impresión 
+ * deberá indicar el índice del vector y el valor de la componente. Los índices 
+ * son enteros y g=8.
+ */
 import java.util.Scanner;
 
 public class Main {

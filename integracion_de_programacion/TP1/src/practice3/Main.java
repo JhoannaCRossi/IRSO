@@ -1,7 +1,10 @@
 package practice3;
 
 import java.util.Scanner;
-
+/*3.- Realizar un programa que permita leer de teclado diez valores enteros 
+ * positivos; Y que permita, cada vez que se ingrese uno de los mismos, 
+ * imprimir en pantalla si es par, si es impar e identificar el cero.
+ */
 public class Main {
 
 	public static void main(String[] args) {

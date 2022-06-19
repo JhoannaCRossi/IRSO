@@ -1,7 +1,12 @@
 package practice5;
 
 import java.util.Scanner;
-
+/*Ejercicio 5: Realizar un programa que permita asignar la identidad a una 
+ * matriz R de dimensiones mxm (considerar m=4). Los índices y las componentes 
+ * son enteros. La matriz identidad es la que tiene valor 1 en la diagonal 
+ * principal y 0 en el resto.
+ * 
+ */
 public class Main {
 
 	public static void main(String[] args) {

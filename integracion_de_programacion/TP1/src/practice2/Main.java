@@ -1,7 +1,11 @@
 package practice2;
 
 import java.util.Scanner;
-
+/*2.- Realizar un programa que permita leer de teclado valores reales entre 
+ * 1 y 9 para cargarlos dentro de una matriz de 6x6, continuar sacando el 
+ * promedio de todos los valores; y para finalizar imprimir el resultado. 
+ * Aplicar POO en el desarrollo de la matriz.
+ */
 public class Main {
 
 	public static void main(String[] args) {

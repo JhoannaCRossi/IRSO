@@ -1,7 +1,9 @@
 package practice4;
 
 import java.util.Scanner;
-
+/*Ejercicio 4: Realizar un programa que permita obtener el producto de dos 
+ * vectores A y B componente a componente, guardando el resultado en uno nuevo.
+ */
 public class Main {
 
 	public static void main(String[] args) {

@@ -1,7 +1,12 @@
 package practice1;
 
 import java.util.Scanner;
-
+/*Ejercicio 1: Realizar un programa que permita hacer nulos (cargarles valor 0)
+ *  los elementos de un vector Q de enteros, con n componentes (donde n es una 
+ *  constante que vale 10).O sea, al hacer un barrido de lectura por un vector 
+ *  buscando el valor 10, el encontrarlo reemplazarlo por el valor0 (nulo).
+ * 
+ */
 public class Main {
 
 	public static void main(String[] args) {
