@@ -1,5 +1,10 @@
 package practice1;
 
+/*Ejercicio 1: Realizar un programa que permita leer de teclado y 
+ * luego imprimir los contenidos de una variable tipo struct cuyos 
+ * campos son: nombre (cadena de caracteres [10]), legajo (entero), 
+ * dependencia de trabajo (entero), horas trabajadas (real)
+ */
 public class Main {
 
 	public static void main(String[] args) {
