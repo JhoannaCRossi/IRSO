@@ -47,7 +47,6 @@
          - [Práctica 4](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice4)
       - TP1: [TP1](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/TP1)
 
-https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice1
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhoanna-castellanos/)
