@@ -1,0 +1,8 @@
+Polimorfismo
+
+Una de las características fundamentales de la POO es el polimorfismo, que no es otra cosa que la posibilidad de construir varios métodos con el mismo nombre, pero con relación a la clase a la que pertenece cada uno, con
+comportamientos diferentes. Esto conlleva la habilidad de enviar un mismo mensaje a objetos de clases diferentes. Estos objetos recibirían el mismo mensaje global pero responderían a él de formas diferentes; por ejemplo, un mensaje "+" a un objeto Entero significaría suma,mientras que para un objeto String significaria concatenación ("pegar" strings uno seguido al otro).
+
+Herencia
+
+En la programación orientada a objetos se considera que una clase hereda de otra cuando la primera es un tipo de la segunda. Una clase es un artefacto de implementación de tipo que permiten los lenguajes

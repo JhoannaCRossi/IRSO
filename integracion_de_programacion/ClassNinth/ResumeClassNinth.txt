@@ -1,0 +1,39 @@
+¿Qué es una clase?
+
+“En informática, una clase es una plantilla para la creación de objetos de datos según un modelo predefinido. Las clases se utilizan para representar entidades o conceptos, como los sustantivos en el lenguaje. Cada clase es un modelo que define un conjunto de variables -el estado, y métodos apropiados para operar con dichos datos -el comportamiento. Cada objeto creado a partir de la clase se denomina instancia de la clase.
+
+Las clases son un pilar fundamental de la programación orientada a objetos. Permiten abstraer los datos y sus operaciones asociadas al modo de una caja negra. Los lenguajes de programación que soportan clases difieren sutilmente en su soporte para diversas características relacionadas con clases. La mayoría soportan diversas formas de herencia. Muchos lenguajes también soportan características para proporcionar encapsulación, como especificadores de acceso.”
+
+Java utiliza las interfaces para definir protocolos homogéneos a través de jerarquías heterogéneas. Las veremos más adelante, pero para decir que una clase implementa una interfaz (o varias), escribimos el nombre de esta (en el caso de ser varias, separados por comas) después de la palabra implements.
+Las clases públicas pueden ser utilizadas por cualquier otra clase y también pueden ser marcadas como finales, utilizando el modificador final antes del class en la definición. Este modificador hace que no pueda existir una subclase de ella.
+
+Finalmente, las clases pueden ser marcadas como abstractas (moldes para otras clases) usando el modificador abstract. Las clases abstractas, como veremos más adelante en detalle, no pueden tener instancias y sirven para agrupar el conocimiento y comportamiento en común de las sunclases de este tipo.
+
+Atributos
+
+Los colaboradores internos, también conocidos como variables de instancia o atributos, se definen en el cuerpo de la clase. Su definición es similar a la de cualquier variable, con la particularidad que se le puede agregar los modificadores de visibilidad.
+
+Cuando queremos exponer un atributo como público, deberíamos hacerlo a través de métodos getter (lectura)
+y setter (escritura).Existe la convención de nombrar a estos métodos utilizando los prefijos get, set o is, seguido del atributo.
+
+Métodos
+
+En la programación , un método es una subrutina cuyo código es definido en una clase y puede pertenecer tanto a una clase, como es el caso de los métodos de clase o estáticos, como a un objeto, como es el caso de los
+métodos de instancia. Análogamente a los procedimientos en los lenguajes imperativos, un método consiste generalmente de una serie de sentencias para llevar a cabo una acción, un juego de parámetros de entrada que regularán dicha acción o, posiblemente, un valor de salida (o valor de retorno) de algún tipo.
+
+Así, es recomendable entender a un método no como una secuencia de instrucciones sino como la forma en que el objeto es útil (el método para hacer su trabajo).
+
+Java permite que se puedan definir varios métodos con el mismo nombre dentro de una misma clase. Esto se conoce como sobrecarga (overloading).
+
+Estructuras
+
+Estructura a las relaciones, propiedades y métodos como componentes que se emplean para poder desarrollar una Programación Orientada a Objetos= 
+
+Las relaciones permiten que el objeto se inserte en la organización y están formadas esencialmente por punteros a otros objetos. 
+Las propiedades distinguen un objeto determinado de los restantes que forman parte de la misma organización y tiene valores que dependen de la propiedad de que se trate. Las propiedades de un objeto pueden ser heredadas a sus descendientes en la organización.
+Los métodos son las operaciones que pueden realizarse sobre el objeto, que normalmente estarán incorporados en forma de programas (código) que el objeto es capaz de ejecutar y que también pone a disposición de sus
+descendientes a través de la herencia.
+
+Encapsulamiento y ocultación
+
+Como hemos visto, cada objeto es una estructura compleja en cuyo interior hay datos y programas, todos ellos relacionados entre sí, como si estuvieran encerrados conjuntamente en una cápsula. Esta propiedad (encapsulamiento), es una de las características fundamentales en la POO.
