@@ -47,6 +47,17 @@
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice2) 
          - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice3)
          - [Práctica 4](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice4)
+      - Clase 9: [Clases, Atributos, Estructuras, Métodos](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassNinth)
+      - Clase 10: [Herencia y Polimorfismo](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassTenth
+)
+      - Clase 11: [Ejercicios Repaso](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh)
+         - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice1)
+         - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice2) 
+         - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice3)
+         - [Práctica 4](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice4)
+         - [Práctica 5](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice5)
+         - [Práctica 6](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice6)
+         - [Práctica 7](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEleventh/src/practice7)
       - TP1: [TP1](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/TP1)
 
 ## 🔗 Links
