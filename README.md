@@ -40,6 +40,8 @@
          - [Práctica 4](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice4)
          - [Práctica 5](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice5)
          - [Práctica 6](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassSeventh/src/practice6)
+      - Calculadora: [Propuesta, hecha con POO](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/Calculator
+)
       - Clase 8: [Ejercicios2 Vectores y Matrices](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth)
          - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice1)
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassEighth/src/practice2) 
