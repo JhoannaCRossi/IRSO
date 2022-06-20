@@ -9,5 +9,4 @@ public class Subtraction extends Operation{
 			this.subtraction = number1 - number2;
 			this.setResult(this.subtraction);
 		}
-
 }
