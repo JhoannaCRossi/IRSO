@@ -28,6 +28,7 @@ public class Main {
 		}while(numberInput!=0);
 		
 		System.out.println("its done!");
+		sc.close();
 	}
 	
 	public static boolean IsANumberOnRange(String text) {

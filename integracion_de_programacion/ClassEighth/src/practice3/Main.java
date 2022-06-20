@@ -62,6 +62,7 @@ public class Main {
 			//creatring el vector A
 			vector[i] = new Registro(producto, codigo, precio);
 		}
+		sc.close();
 	}
 	
 	public static boolean isANumberOnRange(String text, int limit) {

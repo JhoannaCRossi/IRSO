@@ -36,7 +36,7 @@ public class Main {
 		
 		System.out.println("\n");
 		System.out.println("The sum of the elements of this vector is "+acum);
-
+		sc.close();
 	}
 	
 	public static boolean isANumberOnRange(String text) {

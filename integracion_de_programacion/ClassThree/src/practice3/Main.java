@@ -29,6 +29,6 @@ public class Main {
 		result = one +" "+ two;
 		//console sampling
 		System.out.println(result + " this is the result of concatenating.");
-
+		sc.close();
 	}
 }

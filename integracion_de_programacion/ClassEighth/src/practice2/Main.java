@@ -58,7 +58,7 @@ public class Main {
 					", país: "+ registre[i].getPais()
 					+"\n");
 		}
-		
+		sc.close();
 	}
 	
 	public static boolean isANumberOnRange(String text, int limit) {

@@ -52,6 +52,7 @@ public class Main {
 			System.out.print(i + " ");
 		}
 		System.out.println("\n Is the result!! Finish.");
+		sc.close();
 	}
 
 	public static boolean isANumberOnRange(String text) {

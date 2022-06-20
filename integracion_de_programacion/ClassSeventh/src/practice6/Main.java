@@ -19,6 +19,7 @@ public class Main {
 		
 		double resultMatrix[][] = sumeMatrixes(X,J, A, B);
 		printMatrix(resultMatrix, A, B);
+		sc.close();
 	}
 
 	private static double[][] sumeMatrixes(double[][] x, double[][] j, int A, int B) {

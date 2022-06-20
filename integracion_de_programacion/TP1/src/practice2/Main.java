@@ -37,6 +37,7 @@ public class Main {
 		System.out.println(matrix.toString());
 		System.out.println("the average is"+ acum/(6*6));
 		System.out.println("Finish");
+		sc.close();
 	}
 
 	public static boolean isANumberOnRange(String text) {

@@ -16,7 +16,7 @@ public class Main {
 		int R[][] = new int[M][M];
 		fillMatrix(R);
 		printMatrix(R);
-		
+		sc.close();
 	}
 
 	public static void fillMatrix(int[][]matrix) {

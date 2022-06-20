@@ -45,6 +45,7 @@ public class Main {
 			//creatring vector
 			vector[i] = new Alumno(nombre, nota);
 		}
+		sc.close();
 	}
 	
 	public static boolean isANumberOnRange(String text, int limit) {

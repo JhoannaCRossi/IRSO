@@ -25,6 +25,7 @@ public class Main {
 		for (int i : vectorResult) {
 			System.out.print(i + " ");
 		}
+		sc.close();
 	}
 
 	private static int[] multiplyVectors(int[] vectorOne, int[] vectorTwo, int length) {

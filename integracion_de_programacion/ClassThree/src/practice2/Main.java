@@ -28,7 +28,8 @@ public class Main {
 		}
 		
 		result = (firstVariable * secondVariable) / thirdVariable;
-		System.out.println(result + " this is the result.");				
+		System.out.println(result + " this is the result.");
+		sc.close();
 	}
 	
 	public static boolean IsFloat(String text) {

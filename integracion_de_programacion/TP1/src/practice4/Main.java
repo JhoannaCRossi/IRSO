@@ -60,6 +60,7 @@ public class Main {
 			
 		}while(tryAgain);
 		System.out.println("FINISH, THANKU");
+		sc.close();
 	}
 
 	public static boolean isAOperation(String text) {

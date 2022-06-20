@@ -38,6 +38,7 @@ public class Main {
 			}
 		}
 		System.out.println("Finish");
+		sc.close();
 	}
 	
 	public static boolean isANumberOnRange(String text) {

@@ -33,6 +33,7 @@ public class Main {
 		for (char i : A) {
 			System.out.print(i + " ");
 		}
+		sc.close();
 	}
 	
 	public static boolean isANumberOnRange(String text) {
