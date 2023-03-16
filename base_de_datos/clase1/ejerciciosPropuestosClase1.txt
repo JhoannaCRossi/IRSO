@@ -1,0 +1,175 @@
+* CREO QUERYS PARA PODER HACER EJERCICIOS PROPUESTOS
+
+CREATE TABLE obras_sociales (
+    cod_obra_social VARCHAR(5) PRIMARY KEY,
+    denominacion VARCHAR (50) NOT NULL,
+    direccion VARCHAR (50) NOT NULL,
+    localidad VARCHAR(50) NOT NULL,
+    telefono VARCHAR(20)
+)
+
+CREATE TABLE pacientes (
+    nro_historia_clinica INT PRIMARY KEY,
+    apellido VARCHAR (50) NOT NULL,
+    nombre VARCHAR (50) NOT NULL,
+    fecha_nacimiento DATETIME,
+    sexo VARCHAR (1),
+  	tipo_doc VARCHAR (3),
+    nro_documento VARCHAR (10),
+    cod_obra_social VARCHAR (5) NOT NULL,
+    CONSTRAINT fk_cod_obra_social FOREIGN KEY (cod_obra_social) REFERENCES obras_sociales (cod_obra_social)
+)
+
+* INSERTO DATOS A LAS TABLAS RELACIONADAS 
+
+INSERT INTO obras_sociales (cod_obra_social, denominacion, direccion, localidad, telefono)
+values ('OS1','OSECAC', 'Av. Corrientes 1232', 'Ciudad de Buenos Aires.', '4333-9191'),
+('OS2', 'OSPLAD', 'Av. Pueyrredon 301', 'Ciudad de Buenos Aires.', '4332-9898'),
+('OS3', 'OSEM', '25 de Mayo 3219', 'Ciudad de Buenos Aires.', '4200-1882'),
+('OS4', 'OSEC', 'Av. L. N. Alem 1001', 'Ciudad de Buenos Aires.', '4132-7656');
+
+*REVISO DATOS 
+
+SELECT * FROM obras_sociales;
+
+
+INSERT INTO pacientes (nro_historia_clinica, apellido, nombre, fecha_nacimiento, sexo,
+                       tipo_doc, nro_documento, cod_obra_social)
+VALUES (1002, 'Pereyra', 'Ariel José', 11/03/1926, 'M', 'LE', '3.545.212', 'OS1'),
+(2008, 'Mayoral', 'Ana María', 21/10/1980, 'F', 'DNI', '26.899.998', 'OS3'),
+(4323, 'García', 'Anibal', 19/06/1964, 'M', 'DNI', '16.887.874', 'OS1'),
+(8787, 'Almeida', 'Cristina', 20/12/1943, 'F', 'LC', '7.787.545', 'OS2'),
+(6765, 'Martinez', 'Josefina', 12/04/1977, 'F', 'DNI', '20.984.654', 'OS2'),
+(9893, 'Pizzi', 'Gerardo', 26/03/1950, 'M', 'DNI', '7.765.789', 'OS1');
+
+select * from pacientes
+
+* me di cuenta q inserte mal la fecha
+* hago update
+
+UPDATE pacientes
+  SET fecha_nacimiento='1926-03-11'
+  WHERE nro_historia_clinica=1002
+  
+* asi con todas las rows
+
+CREATE TABLE especialidades (
+    especialidad VARCHAR(5) PRIMARY KEY,
+    denominacion VARCHAR (50) NOT NULL
+)
+
+CREATE TABLE medicos (
+    nro_matricula INT PRIMARY KEY,
+    apellido VARCHAR (50) NOT NULL,
+    nombre VARCHAR (50) NOT NULL,
+    fecha_nacimiento DATETIME,
+    sexo VARCHAR (1),
+  	especialidad VARCHAR (5) NOT NULL,
+    CONSTRAINT fk_especialidad FOREIGN KEY (especialidad) REFERENCES especialidades (especialidad)
+)
+
+INSERT INTO especialidades (especialidad, denominacion)
+values ('CA', 'Cardiología'),
+('CM', 'Clínica Médica'),
+('OF', 'Oftalmología');
+
+SELECT * FROM especialidades
+
+INSERT INTO medicos (nro_matricula, apellido, nombre, fecha_nacimiento, sexo,
+                    especialidad)
+VALUES (298987, 'Rosales', 'Mariano', '1970-06-01', 'M', 'CM'),
+(108789, 'Di Marco', 'Rubén', '1950-12-11', 'M', 'CA'),
+(230989, 'Perez Anton', 'Liliana', '1964-05-30', 'F', 'OF'),
+(089897, 'Silva', 'Martina', '1942-09-21', 'F', 'CM');
+
+select * from medicos
+
+CREATE TABLE consulta_medica (
+  	nro_historia_clinica INT NOT NULL,  
+    nro_matricula INT NOT NULL,
+    fehcha_hora_consulta DATETIME,
+  	diagnostico VARCHAR (50) PRIMARY KEY NOT NULL,
+    tratamiento_recomendado VARCHAR (100) NOT NULL,
+    CONSTRAINT fk_nro_historia_clinica FOREIGN KEY (nro_historia_clinica) REFERENCES pacientes (nro_historia_clinica),
+    CONSTRAINT fk_nro_matricula FOREIGN KEY (nro_matricula) REFERENCES medicos (nro_matricula)
+)
+
+INSERT INTO consulta_medica (nro_historia_clinica, nro_matricula, fehcha_hora_consulta, diagnostico, tratamiento_recomendado)
+VALUES (1002, 298987, '2000-11-12 13:30.000','Gripe', 'Reposo 7 días'),
+(2008, 298987, '2001-02-13 15:00.000','Fractura de fémur','Yeso durante 30 días'),
+(4323, 230989, '2001-02-13 16:00.000','Miopía', 'Anteojos con mayor aumento'),
+(8787, 089897, '2001-02-14 16:30.000','Dolor de espalda', 'Faja y analgésicos');
+
+select * from consulta_medica
+ 
+ AHORA SI RESUELVO EJERCICIOS PROPUESTOS
+ /////////////////////////////////////////
+--Como se obtiene una lista de todos los pacientes cuya
+obra social es OSECAC.
+
+SELECT p.nro_historia_clinica, 
+p.nombre, p.apellido, p.tipo_doc, p.nro_documento, 
+p.cod_obra_social
+FROM pacientes p
+INNER JOIN obras_sociales ob ON p.cod_obra_social = ob.cod_obra_social
+where ob.denominacion = 'OSECAC';
+
+
+--Como se obtiene una lista de todos los médicos cuya
+especialidad es Clínica médica
+
+SELECT m.nro_matricula, 
+m.nombre, m.apellido, m.fecha_nacimiento, m.sexo, m.especialidad
+FROM medicos m
+INNER JOIN especialidades es ON m.especialidad = es.especialidad
+where es.denominacion = 'Clínica médica';
+
+--Como se obtieneuna lista de todos los pacientes
+incluyendo Apellido y Nombre cuyo diagnóstico en la consulta
+fue Gripe.
+
+SELECT p.nro_historia_clinica,p.nombre, p.apellido
+FROM pacientes p
+INNER JOIN consulta_medica cm ON p.nro_historia_clinica = cm.nro_historia_clinica
+where cm.diagnostico = 'Gripe';
+
+
+--Como se obtiene una lista de todos los pacientes
+incluyendo Apellido y Nombre que hayan recibido una
+Consulta en el año 2001
+
+SELECT p.nro_historia_clinica,p.nombre, p.apellido
+FROM pacientes p
+INNER JOIN consulta_medica cm ON p.nro_historia_clinica = cm.nro_historia_clinica
+where YEAR(cm.fehcha_hora_consulta) = 2001;
+
+
+--Cambiar la especialidad del médico Mariano
+Rosales de Clínica Médica a Cardiología (en este
+caso se accede a Especialidades, se obtiene el
+código de Cardiología (CA), luego se busca
+Mariano Rosales y se actualiza su especialidad de
+CM por CA.
+select * from especialidades
+SELECT * from medicos
+
+UPDATE medicos
+SET especialidad='CA'
+WHERE nro_matricula=298987
+
+--Cambiar la fecha de nacimiento del paciente Ana
+María Mayoral (21/10/1980) por (21/11/1980) se
+busca a Ana María Mayoral y se actualiza su fecha
+de nacimiento.
+SELECT * FROM pacientes
+
+UPDATE pacientes
+SET fecha_nacimiento='1980-11-21'
+WHERE nro_historia_clinica=2008
+
+--Ingresar la especialidad PA, Pediatría
+SELECT * FROM especialidades
+
+INSERT INTO especialidades (especialidad, denominacion)
+values ('PA', 'Pediatría');
+  

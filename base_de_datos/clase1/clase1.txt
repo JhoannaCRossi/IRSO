@@ -1,0 +1,34 @@
+Base de datos = es básicamente un conjunto de datos que se encuentran relacionados entre sí. Cuando hablamos de datos nos referimos a elementos que tienen implícito un significado.
+
+algunos ejemplos de lo que podrían ser bases de datos:
+
+-Alumnos del Instituto,
+-Vehículos registrados en la CABA,
+-Datos de los libros que se encuentran en la Biblioteca Nacional,
+-entre otros.
+
+Un concepto más profundo seria =
+	Una base de datos es un conjunto de datos interralacionados almacenados en conjunto, sin redundancia perjudicial o innecesaria con el objeto de servir a una aplicacion o más de la mejor manera posible.
+
+que se necesita si se desea crear una base de datos en una computadora ?
+
+1.- Una serie de programas que nos permitirán no sólo crear la base de datos sino también mantenerla, estos programas habrán sido escritos para esa tarea específica. (creado por nosotros mismos como programadoras)
+
+2.- Un sistema de gestion de base de datos(SGBD) o
+DBMS (data base management system), un software de propósito general que nos permite definir, crear y administrar la base de datos que pueden ser útiles en divesar aplicaciones. (disponemos de él, ya creados)
+
+Se denomina SISTEMA DE BASE DE DATOS a la base de datos mas el sistema de gestión de base de datos.
+
+Cuando se habla de MANIPULACIÓN DE UNA BASE DE DATOS se hace mención a consultas y actualizaciones sobre ésta.
+
+El ciclo donde interviene el SGBD es un usuario pide información mediante una aplicacion al SGBD y es éste quien le pide a la base de datos dicho requerimiento.
+
+El SGBD tiene 3 funciones = 
+
+1.- Función de definición: permite a los diseñadores de la base de datos describir los elementos de datos, su estructura y las relaciones que existen entre ellos. el SGDB proporciona un lenguaje para la definicion de las tablas, los atributos que la componen, las restricciones semánticas y las características de tipo físico o almacenamiento necesarias.
+
+2.- Funcion de manipulación: permite a los usuarios de la base de datos agregar, eliminar o modificar los datos de ella siempre que se respeten las características de seguridad que haya establecido el administrador de base de datos.
+
+3.- Funcion de control: esta función se ocupa de las interfaces que requieren los distintos tipos de usuarios para comunicarse con la base de datos y de las herramientas necesarias para el administrador para definir asi los mecanismos de seguridad y mantenimiento de la base de datos.
+
+En las bases de datos relacionales se usa el lenguaje SQL (standar query languaje).
