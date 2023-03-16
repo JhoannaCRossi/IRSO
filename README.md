@@ -13,7 +13,7 @@
 #### Contenido
 
  - [Base de Datos 2022 - SQL y MYSQL](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos)
-      - Clase 1: [Base de Datos, DBMS](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase1/baseDeDatosClase1.svg)
+      - Clase 1: [Base de Datos, DBMS](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase1/clase1.txt)
       - Clase 2: [Modelo de Datos Relacional](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase2/clase2.txt)
       - Clase 3: [Diagrama Entidad Relación](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase3/Clase3.txt)
       - Clase 4: [Condicionalidad](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase4/Clase4.txt)
