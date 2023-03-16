@@ -172,4 +172,22 @@ SELECT * FROM especialidades
 
 INSERT INTO especialidades (especialidad, denominacion)
 values ('PA', 'Pediatría');
-  
+
+--Cual es el razonamiento para Ingresar una nueva obra
+social con Cod de Obra Social OS5 y Denominación OSPCN,
+ingresar el paciente (Juan María Colochini (demás datos a
+criterio del alumno) y asignarle la obra social OSPCN
+
+Lo que se hace es hacer un insert into a la tabla obras sociales, con los campos requeridos not null,
+en este caso luego de que exista la row con el codigo OS5, si procedo a ingresar un paciente con ese
+codigo de obra social ya existente. ya que el codigo de obra social es una foreng key y se necesita.
+
+--Cual es el razonamiento para Ingresar una nueva consulta
+de la médica Liliana Perez Anton y el paciente Gerardo Pizzi,
+fecha/ hora consulta, diagnóstico y tratamiento recomendado
+a criterio del alumno.
+
+La consulta medica tiene dos foreng keys importantes y una priamry key,
+asi que lo que haremos es buscar el codigo de historia clinica del paciente,
+el nro de matricula de la médica, para asi poder ingresar la consulta correctamente,
+adicionandole al insert la fecha/hora de la ocnsulta el diagnostrico y el tratamiento.

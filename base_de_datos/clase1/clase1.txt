@@ -32,3 +32,74 @@ El SGBD tiene 3 funciones =
 3.- Funcion de control: esta función se ocupa de las interfaces que requieren los distintos tipos de usuarios para comunicarse con la base de datos y de las herramientas necesarias para el administrador para definir asi los mecanismos de seguridad y mantenimiento de la base de datos.
 
 En las bases de datos relacionales se usa el lenguaje SQL (standar query languaje).
+
+Entonces las consultas a una base de datos son la obtención de datos que se encuentran almacenados y las actualizaciones son los cambios que realizamos a las bases de datos, estos cambios pueden ser ingresar nuevos datos, modificar los existentes o eliminarlos.
+
+Catálogo del sistema = incluyte información referida a la estructura de cada tabla, el formato en el cual se almacenan los datos y restricciones que se le aplican a los datos.
+
+Carácterísticas de una base de datos=
+	1) Control de redundancia: repetición de registros. Por eso se crea uina base de datos en donde cada dato se almacena en un solo lugar, esto logra evitar inconsistencia de los datos y ahorra espacio de almacenamiento.
+	2) Restricción de acceso: acceso a visualización de datos a usuarios autorizados mediante permisos. Esto mediante un usuario administrador que provee y autoriza dichos permisos.
+	3)Diferentes interfaces: el SGDB debe ofrecer diferentes vistas segun tengan requerimiento los usuarios que la utilizan.
+	4)Restricciones de integridad: el SGDB debe ofrecer una serie de recursos para poder definir las restricciones y tener la capacidad de hacerlas cumplir. Ejemplo datos de tipo fecha válidos, o que no se pueda ingresar una row con un dato faltante u existente.
+	5)Recuperación y resguardo de la información: todo SGDB debe ser capaz de recuperar la información contenida luego de que se produzcan fallas en el software o en el hardware.
+	6)Información actualizada: Los SGDB logran que la información esté disponible para todos los usuarios un instante después que esta fue actualizada.
+	
+Usuarios de una base de datos=
+
+-Si la base de datos es chica es común que una sola persona la diseñe, la construya y la actualice.
+
+-Si la base de datos es grande, existiran personas que adoptarán diferentes roles, entre ellos:
+
+	* Administrador de base de datos: supervisión y control de recursos disponibles (BBDD y SGBD). Encargado de autorizar el ingreso de datos y de vigilar el uso.
+	* Diseñadores de base de datos: Determinan las estructuras necesarias para el almacenamiento de datos, y de la identificacion de los mismos. Tarea que se realiza antes de la cronstrucción de la BBDD. Encargados de obtener todo tipo de información que ayude a determinar cuales son las características que son esperadas por los usuarios finales de la base de datos.
+	* Usuarios finales: todas aquellas personas que tienen acceso a la base de datos para poder ealizar consultas o actualizaciones. 
+	 ** Usuarios finales ocasionales: los que acceden muy de vez en cuando pero probablemente a diferente información cada vez.
+	 ** Usuarios finales simples: la mayoría de los usuarios son de este tipo. Su actividad más común es realizar consultas y actualizaciones permanentes de la base de datos y de lo que se denominan consultas standard.
+	 ** Usuarios finales avanzados: son aquellas personas q pueden realizar consultas o actualizaciones muy complejas y que conocen la capacidad de la base de datos para aprovechar todo su potencial.
+	 
+Arquitectura de las bases de datos=
+	Existen 3 puntos importantes propios de los sistemas de bases de datos:
+	1.- División entre los programas de la aplicación y los datos.
+	2.- Existencia de diferentes vistas para que sean utilizadas por los diferentes tipos de usuarios.
+	3.- Uso del catálogo para almacenar la estructura de la base de datos.
+	
+	Estas tres características logran cumplirse en una estructura de tres niveles creada por el comite ANSI-SPARC en 1975, la cual consiste: 
+	
+	* Separar los programas de apicacion de la base de datos física. El esquema de una base de datos se define en tres niveles de abstracción distintos:
+	 - El nivel interno: donde queda descrita la estructura física de la base de datos meiante un esquema interno. Describe todos los detalles para el almacenamiento de la base de datos, así como las formas de acceso.
+	 - El nivel conceptual: describe la estructura de toda la base de datos para los usuarios, mediante un esquema conceptual. No muestra detalles de las estructuras donde se almancenan los datos, se ocupa de describir entidades, atributos, relaciones, operaciones de los usuarios y restricciones. 
+	 - El nivel externo: describe esquemas externos o vistas de usuarios. Cada esquema exteno describe la parte de la base de datos que interesa a un grupo de usuarios determinado.
+	 Los 3 esquemas solo son observaciones de los mismos datos pero con distintos niveles de abstracción.
+	 
+Independencia de datos = 
+	La capacidad para modificar el esquema en un nivel del sistema sin tener que modificar el esquema del nivel inmediato superior. Hay dos tipos:
+	1- Independencia Lógica: capacidad de modificar el esquema conceptual sin tener que alterar los esquemas externos ni los programas de aplicación. Ejemplo: se reduce la base de datos eliminando un entidad, los esquemas externos que no se refieran a ella no deberán verse afecados.
+	2- Independencia Física: capacidad de modificar el equema interno sin tener que alterar el esquema conceptual(o los externos). Ejemplo: puede ser necesario reorganizar ciertas tablas físicas con el fin de mejorar le rendimiento de las operaciones de consulta o de actualización de datos. Dado que la independencia física se refiere sólo a la separacion entre las aplicaciones y las estructuras físicas de almacenamiento, es más fácil de conseguir que la independencia lógica.
+
+Herramientas de un sistema de bases de datos=
+	Los SGBD poseen herramientas que ayudan al administrador de la base de datos a realizar su trabajo.
+	*Carga de datos: existe una herramienta que se ocupa de realizar la carga inicial de la base de datos. Traspaso de información de una base vieja a una nueva
+	*Resguardo de información o backup: esta herramienta se ocupa de crear copias de seguridad de la base de datos. Son almacenadas en algún dispositivo.
+	*Reorganización de archivos: esta herramienta se utiliza para poder mejorar el comportamiento u optimizar la base de datos.
+
+Lenguajes de un sistema de gestion de base de datos=
+	Se cuenta con el lenguaje SQL, que lo dividen de acuerdo a los requerimientos de los usuarios:
+	* Lenguaje de Definición de Datos (LDD): utilizado para definir la estructura lógica de la base de datos(nivel lógico), las estructuras externas requeridas para el desarrollo de las diferentes aplicaciones(nivel externo) así como la estructura interna(nivel físico).
+	* Lenguaje de Manipulación de Datos (LMD): una vez se ha descrito la base de datos, ésta ya está preparada para cargar los datos en las estructuras definidad y para su utilización. Este lenguaje es el que permite agregar, eliminar, modificar y buscar datos en la base de datos. 
+	* Lenguaje de Control: el administrador de la base de datos utiliza este lenguaje para especificar los aspectos de seguridad física (copias de seguridad en caso de caída,etc.) así como protección frente a accesos no permitidos.
+	
+Modelo de SGBD=
+-Modelo relacional: es conocida por los usuarios como un conjunto de tablas, aunque esta visión es solo a nivel lógico ya que físicamente puede estar implementada por diferentes estructuras de almacenamiento.
+
+-Modelo red: donde los datos se representan por colecciones de registros y las relaciones entre los datos se representan mediante conjuntos. Los registros son organizados como un grafo. El SGBD de red mas conodico es el IDMS.
+
+-Modelo jerarquico: similar al de red con restricciones. La base de datos jerarquica puede ser representada con un árbol. El más conocido es el IMS.
+
+Tanto el modelo de red como el jerarquico requieren que el usuario conozca la estructura física de la base de datos para trabajar con ella a diferencia del modelo relacional donde existe más independencia de los datos.
+
+-Modelo orientado a objetos: es descrito como un conjunto de objetos, sus propiedades y sus operaciones. Aquellos objetos que posean la misma estructura y comportamiento forman parte de una clase y tales clases son organizadas por jerarquías. Las operaciones aplicables a cada clase se definen como procedimientos predefinidos llamados métodos.
+
+Los SGBD que solo sirven para un solo usuario al mismo tiempo se les clasifica como monousuarios, caso contrario multiusuarios.
+
+	
