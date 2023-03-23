@@ -1,0 +1,81 @@
+Entidades y Atributos
+
+1)_ Dadas las siguientes entidades, describir los atributos y su atributo clave.
+
+a)_ Pasajeros
+Número de boleto
+Nombre
+Apellido
+Nacionalidad
+Tipo Documento
+Numero Documento
+Fecha de Nacimiento
+Origen de viaje
+Destino de viaje
+Fecha de viaje
+Consideramos a Número de boleto como atributo clave
+
+b)_ Computadoras
+Número de referencia
+Número de serie
+Marca
+Fecha de fabricación
+Chip procesador
+Velocidad procesador
+Consideramos a Número de serie como atributo clave
+
+c)_ Cámaras Fotográficas
+Tipo de cámara
+Dimensiones
+Peso
+Código de serie
+Pixeles
+Nombre
+Fecha fabricación
+Distancia zoom
+Precio
+Consideramos a Código de serie como atributo clave
+
+d)_ Barrios
+Número de barrio
+Nombre
+Codigo postal
+Limites
+Ciudad al que pertenece
+Consideramos a Número de barrio como atributo clave
+
+e)_ Provincias
+Nombre
+Codigo postal
+Limites
+Capital
+Número de provincia
+Población
+Superficie
+Consideramos a Numero de provincia como atributo clave
+
+f)_ Jubilados
+Número de Jubilación
+Apellido
+Nombre
+Tipo Documento
+Número Documento
+Domicilio
+Localidad
+Teléfono
+Código Postal
+Consideramos a Número de Jubilación como atributo clave
+
+g)_ Automóviles
+Número Serie Motor
+Modelo
+Marca
+Tipo
+Color
+Cantidad Puertas
+Capacidad de personas
+Año de fabricación
+Número de patente
+Consideramos a Número de patente como atributo clave
+
+
