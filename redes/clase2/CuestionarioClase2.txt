@@ -1,0 +1,5 @@
+1- Las estaciones de red no pueden cumplir funciones de servidores de red. -> FALSO
+2- Los adaptadores de redes inalámbricas no solo estan presentes en PC, sino que hasta los electrodomésticos poseen uno. -> VERDADERO
+3- Los cables UTP tienen solo 3 categorías y la mas usada es la CAT3. -> FALSO
+4- La fibra óptica es más propensa a las interferencias que el cable UTP. -> FALSO
+5- El firewall dentro de una red puede ser tanto un Hardware dedicado como un Software que pueda cumplir esa misma función. -> VERDADERO
