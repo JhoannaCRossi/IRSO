@@ -79,7 +79,7 @@
   <summary>Redes 2022</summary>
   
   - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/redes)
-      - Clase 1: [Redes, Tipos de Redes, Arquitectura de Capas](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico/Unidad1-Modelizacion)
+      - Clase 1: [Redes, Tipos de Redes, Arquitectura de Capas](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase1)
 </details>
       
 
