@@ -1,0 +1,30 @@
+UNIDAD 1: MODELIZACIÓN 
+
+Ejes Cartesianos: 
+	* Primer número coordenada horizontal (eje ordenada)
+	* Segundo número coordenada vertical (eje abscisa)
+	
+	Permiten ubicar los puntos en un plano, usando en las cuadrículas ejer perpendiculares.
+	También se les llama sistema de ejes Ortogonales.
+
+Según la Geometría:
+	A cada punto de un plano le corresponde un par ordenado de números y 
+	a cada par ordenado le corresponde un punto en el plano, donde el valor de 'x' es horizontal y el primero,
+	y el valor de 'y' es vertical y es el segundo.
+	
+Par ordenado: 
+	(x;y)
+
+Coordenada Cartesiana: su nombre se debe al matematico y filosofo René Descartes.
+Origen: es el punto (0;0) y a veces se le llama 'O'.
+
+Cuadrante: su nombre viene de Cuad que significa Cuatro.
+
+Primer cuadrante -> eje abscisas positivo, eje ordenadas positivo
+Segundo cuadrante -> eje abscisas negativo, eje ordenadas positivo
+Tercer cuadrante -> eje abscisas negativo, eje ordenadas negativo
+Cuarto cuadrante -> eje abscisas positivo, eje ordenadas negativo
+
+
+
+	
