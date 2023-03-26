@@ -10,11 +10,16 @@
   que actualmente curso.
 ```
 
-#### Contenido
-
- - [Análisis Matemático 2022](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico)
+<details>
+  <summary>Análisis Matemático 2022</summary>
+  
+  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico)
       - Clase 1: [Ejes Coordenadas, Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico/Unidad1-Modelizacion)
- - [Base de Datos 2022 - SQL y MYSQL](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos)
+</details>
+<details>
+  <summary>Base de Datos 2022 - SQL y MYSQL</summary>
+  
+  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos)
       - Clase 1: [Base de Datos, DBMS, SQL Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase1/clase1.txt)
       - Clase 2: [Modelo de Datos Relacional](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase2/clase2.txt)
       - Clase 3: [Diagrama Entidad Relación](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase3/Clase3.txt)
@@ -22,8 +27,12 @@
       - Clase 5: [Objeto Asociativo](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase5/Clase5.txt)
       - Clase 6: [Diccionario de Datos](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase6/Clase6.txt)
       - Clase 7: [Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase7)
-      - Clase 8: [Ejercicios Propuestos2](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase8)
- - [Integración de Programación 2022 - JAVA](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion)
+      - Clase 8: [Ejercicios Propuestos2](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase8)</details>
+</details>
+<details>
+  <summary>Integración de Programación 2022 - JAVA</summary>
+  
+  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion)
       - Clase 1: [Presentación, Infografía, Teoría Java](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassFirst/resumeClass1.txt)
       - Clase 2: [Repaso de Estructuras Ciclicas, Operadores, Conceptos Básicos](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/ClassSecond/resumeClass2.txt)
       - Clase 3: [Ejercicios Propuestos de Estructuras Ciclicas](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassThree/src)
@@ -65,6 +74,14 @@
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassTwelfth/src/practice2) 
          - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassTwelfth/src/practice3)
       - TP1: [TP1](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/TP1)
+</details>
+<details>
+  <summary>Redes 2022</summary>
+  
+  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/redes)
+      - Clase 1: [Redes, Tipos de Redes, Arquitectura de Capas](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico/Unidad1-Modelizacion)
+</details>
+      
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
