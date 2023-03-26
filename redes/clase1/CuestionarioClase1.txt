@@ -1,0 +1,13 @@
+PREGUNTAS PARA LOS ESTUDIANTES
+1. Dentro de que tipo de red ubicaría a
+• Su teléfono celular -------> LAN
+• Su notebook personal ------> MAN
+• Un Servidor de Netflix ----> WAN
+
+2. Conteste con Verdadero o Falso
+a. El programa Microsoft Paint esta basado en la arquitectura
+Cliente – Servidor ----> Verdadero
+b. La pagina de Facebook esta realizada en una arquitectura de
+dos capas -------------> Falso
+c. La app de Instagram esta realizada en una arquitectura de tres
+capas.-----------------> Verdadero

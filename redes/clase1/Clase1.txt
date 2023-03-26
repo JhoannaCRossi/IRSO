@@ -1,0 +1,22 @@
+Redes:
+	Se entiende por redes informáticas, redes de comunicaciones de datoso redes de computadoras a un número de sistemas informáticos conectados entre sí mediante una serie de dispositivos alámbricos o inalámbricos, gracias a los cuales pueden compartir información en paquetes de datos, transmitidos mediante impulsos eléctricos, ondas electromagnéticas o cualquier otro medio físico.
+
+Tipos de Redes Informaticas, de acuerdo a su extension:
+	LAN = redes de area local (Local Area Network) son las de uso más frecuente. Son conjuntos de máquinas interconectadas, ubicadas en extensiones relativamente pequeñas. Desde nuestros hogares hasta grandes edificios de oficinas, pasando por entidades gubernamentales e intituciones académicas. Permiten interacción entre múltiples equipos para compartir datos y recursos. 
+	WLAN = una LAN con sus nodos interconectados con tecnología Wifi se conoce como red inalámbrica de área local. Con ésta no no hay que tener engorrosos cables en tu oficina para lograr la interconexión, ya que se realiza mediante ondas de radio de alta frecuencia. Una desventaja es que son menos seguras que sus versiones conectadas fisicamente.
+	MAN = red de área metropolitana (Metropolitan Area Network) consiste en computadoras compartiendo recursos entre sí en áreas de cobertura de mayor tamaño que una LAN, pero menor que una WAN. Subsanan problemas de latencia y perdida de calidad de la señan en interconexiones que abarcan largas distancias. Usan bus doble, ida y vuelta, con fibra +optica para interconectar las diferentes LAN a la red.
+	WMAN = versión inalámbrica de MAN (Wireless Metropolitan Area Network), es utilizada por telefonía celular como LTE y WiMax para interconectar sus miembros.
+	WAN = redes de área amplia (Wide Area Network), son redes LAN y MAN interconectadas entre sí. Sus nodos estan separados por distancias que pueden abarcar continentes enteros. Los integrantes de esas redes no necesariamente estan conectados físicamente. Hace uso de servicios de microondas y satelites para integrar sus diferentes nodos. Son muy usadas por grandes empresas que abarcan mucho territorio. Generalmente con ayuda de VPN para conseguir privacidad en el intercambio de datos.
+	WWAN = version inalambrica de WAN, esta interconectada al resto de los nodos mediantre el uso de redes de telefonía celular como LTE, WiMAx, GSM, CDMA2000, UMTS, entre otras.
+	
+Paradigma "Cliente - Servidor":
+	Cliente que pide solicitudes al servidor, y el servidor responde a dichas solicitudes. En esta arquitectura el cliente suele ser estaciones de trabajo que solicitan varios servicios al servidor, mientras que un servidor es una maquina que actua como deposito de datos y funciona como un sistema de gestor de base de datos, este se encarga de dar la respuesta demandada por el cliente.
+
+Arquitectura 2 capas:
+	Esta se utiliza para describir los sistemas cliente servidor en donde el cliente solicita recursos y el servidor responde directamente a la solicitud con sus propios recursos. Eso significa que el servidor no requiere de una aplicación extra para proporcionar parte del servicio.
+
+Arquitectura 3 capas:
+	En la arquitectura de tres capas existe un nivel intermediario, eso significa que la arquitectura generalmente está compartida por un cliente que como hablamos más arriba es el que solicita los recursos equipado con
+una interfaz de usuario o mediante un navegador web.
+	La capa del medio es denominada software intermedio cuya tarea es proporcionar los recursos solicitados pero que requiere de otro servidor para hacerlo. La ultima capa es el servidor de datos que proporciona al servidor de aplicaciones los datos necesarios para poder procesar y generar el servicio que solicito el cliente en un principio.
+	
