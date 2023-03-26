@@ -9,7 +9,12 @@
   resúmenes y teoría de la carrera
   que actualmente curso.
 ```
-
+<details>
+  <summary>Programación II 2022</summary>
+  
+  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/programacion2)
+      - Clase 2: [Ciclos, Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase2/EjerciciosPropuestosClase2.txt)
+</details>
 <details>
   <summary>Análisis Matemático 2022</summary>
   
