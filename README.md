@@ -12,6 +12,8 @@
 
 #### Contenido
 
+ - [Análisis Matemático 2022](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico)
+      - Clase 1: [Ejes Coordenadas, Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico/Unidad1-Modelizacion)
  - [Base de Datos 2022 - SQL y MYSQL](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos)
       - Clase 1: [Base de Datos, DBMS, SQL Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase1/clase1.txt)
       - Clase 2: [Modelo de Datos Relacional](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase2/clase2.txt)
