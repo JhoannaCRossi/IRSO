@@ -1,0 +1,12 @@
+Factorial de un número:
+	Es una función que asigna a cada número natural el producto de todos los números naturales menores o iguales que él. Se indica con n! y se calcula -> n! = n.(n-1).(n-2)
+	Entonces f:n -> n!
+			n! = n.(n-1)!
+	Ejemplo: El factorial de 5 es 5! = 5x4x3x2x1 o 5! = 5x4!
+		Por definicion el factorial de 0 es 1, 0! = 1
+		
+Combinatoria o Análisis Combinatorio Simple:
+	Prescinde de la naturaleza de los elementos, pero tiene en cuenta el orden de dichos elementos. Es decir, tiene por objeto determinar el número de conjuntos que se pueden formar con un cierto número m de elementos distintos y que cada uno de los conjuntos se distinga de los restantes.
+	
+	La combinatoria es una rama de la matemática que estudia colecciones finitas de objetos que satisfacen unos criterios especificados, y se ocupa, en particular del recuento de los objetos de dichas colecciones (combinatoria enumerativa) y del problema de determinar si cierto objeto optimo existe (combinatoria extrema). El estudio de cómo contar objetos es a veces considerado por separado como el campo de la enumeración.
+	La combinatoria analiza todo tipo de posibilidades al momento de considerar la cantidad de opciones posibles en un conjunto finito de objetos. Tiene en cuenta la repeticion posible de los mismos y la no repeticion, al igual que los intercambios de posiciones de los elementos con respecto a su ubicacion y orden específicos. Estos tipos de operaciones se denominan variaciones, combinaciones y permutaciones.
