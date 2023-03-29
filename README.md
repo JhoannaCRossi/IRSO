@@ -87,7 +87,7 @@
       - Clase 1: [Redes, Tipos de Redes, Arquitectura de Capas](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase1)
       - Clase 2: [Componentes de Red, software, topología de red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase2)
           - [Cuestionario Clase 2](https://github.com/JhoannaCRossi/IRSO/blob/master/redes/clase2/CuestionarioClase2.txt)
-      - Clase 3: [Componentes de Red, software, topología de red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase3)
+      - Clase 3: [Tipos Componentes de Red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase3)
 </details>
       
 
