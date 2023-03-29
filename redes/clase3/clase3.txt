@@ -1,0 +1,17 @@
+Ya vimos los componentes de una red, ahora vamos a ver algunos ejemplos practicos donde se interconectan redes de pequeña envergadura con otras más grandes y las utilizamos todos los componentes de red que vimos.
+	Red Domestica:
+		 1.- Wifi = señal emitida por el router wifi, y que conecta nuestos dispositivos inalámbricos, en este caso una Notebook y un télefono celular, estos dos podrían estar incluidos dentro de las estaciones de trabajo.
+		 2.- Ethernet = usamos este medio físico para conectar el smartTV al router. Normalmente es lo mas recomendable ya que nos garantiza el aprovechamiento completo del ancho de banda brindado por el proveedor.
+		 3.- Router - Modem = es el dispositivo que este caso nos da habitualmente nuestro proveedor de internet, en este caso de ejemplo estamos hablando de una conectividad que viene por Cable Coaxial ( por ejemplo Fibertel o Telecentro ). Nuestro modem se va conectando con diferentes concentradores o nodos de la propia empresa, todos por la misma tecnología hasta llegar a su central.
+		 4.- Enlace de internet: en el ejemplo imaginamos que queremos reproducir un contenido multimedia, por ejemplo, Netflix. Eso no esta normalmente alojado en el mismo lugar fisico que nuestro proveedor de internet, podria estar por ejemplo alojando en otro páis. Entonces el enlace entre nuestro proveedor de internet y el servidor remoto se hará en la mayoría de los casos, por cables inclusive transoceánicos, que son de Fibra óptica.
+		 5.- Servidor de contenido: en este caso, el servidor de netflix, en su alojamiento remoto, cumple el rol de Servidor.
+		 
+	Red Empresarial
+		 1.- PC = son las estaciones de trabajo, que cumplen el rol de ser un equipo con el cual accedemos a la red y sus recursos compartidos, en este caso tambien acceden a internet.
+		 2.- Wifi = señal emitida por el router wifi, en este caso esta usada para conectar cualquier dispositivo inalambrico a la red empresarial.
+		 3.- Ethernet = la red completa de estaciones de trabajos se conecta por cableado utp. Se observa que se concentran tipo estrella todas en el switch o concentrador.
+		 4.- Switch = el dispositivo que concentra todas las conexiones cableadas, normalmente los switch en una empresa son como minimo de 16 puertos y del estilo rackeable.
+		 5.- Servidor de archivos = este equipo cumple la funcion de almacenar de manera compartida los archivos a los cuales acceden todas las estaciones de trabajo. El servidor esta conectado tambien via cable utp, al switch.
+		 6.- Router o Firewall = si bien en el grafico parecen dos dispositivos diferentes, en general estan en un solo dispotivio fisico que cumple ambos roles, por una parte, enrutar correctamente los paquetes y por otra proteger las conexiones entrantes y salientes. En este caso, tiene el agregado de la funcion de balanceador, con lo cual puede conmutar de manera automatica entre dos conexiones de internet.
+		 7.- Enlaces de internet = aqui tenemos presentes dos enlaces de internet, los cuales deberían ser proveedores diferentes (para tener redundancia real). En el ejemplo, son inclusive de tecnologia diferente, el enlace 1 llega por Fibra Óptica(por ejemplo movistar fibra o metrotel) hasta la empresa y el enlace 2 llega por cable coaxial (fibertel o telecentro)
+		 
