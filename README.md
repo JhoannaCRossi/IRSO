@@ -26,10 +26,15 @@
   
   - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos)
       - Clase 1: [Base de Datos, DBMS, SQL Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase1/clase1.txt)
+          - [Práctica 1](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase1/ejerciciosPropuestosClase1.txt)
       - Clase 2: [Modelo de Datos Relacional](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase2/clase2.txt)
+          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase2/EjerciciosPropuestosClase2.txt)
       - Clase 3: [Diagrama Entidad Relación](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase3/Clase3.txt)
+          - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase3/respuestasClase2.txt)
       - Clase 4: [Condicionalidad](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase4/Clase4.txt)
+          - [Práctica 4](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase4/RespuestasClase4.txt)
       - Clase 5: [Objeto Asociativo](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase5/Clase5.txt)
+          - [Práctica 5](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase5/RespuestaClase5.txt)
       - Clase 6: [Diccionario de Datos](https://github.com/JhoannaCRossi/IRSO/blob/master/base_de_datos/clase6/Clase6.txt)
       - Clase 7: [Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase7)
       - Clase 8: [Ejercicios Propuestos2](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase8)</details>
