@@ -88,6 +88,8 @@
       - Clase 2: [Componentes de Red, software, topología de red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase2)
           - [Cuestionario Clase 2](https://github.com/JhoannaCRossi/IRSO/blob/master/redes/clase2/CuestionarioClase2.txt)
       - Clase 3: [Tipos Componentes de Red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase3)
+      - Clase 4: [Modelo OSI](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase4)
+      - Clase 5: [Capas Modelo OSI](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase5)
 </details>
       
 
