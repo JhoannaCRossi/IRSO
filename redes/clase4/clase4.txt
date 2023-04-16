@@ -1,0 +1,29 @@
+Modelo OSI
+
+El Modelo OSI (de las siglas en inglés: Open Systems Interconnection, o sea, “Interconexión de Sistemas Abiertos”), es un modelo de referencia para los protocolos de comunicación de las redes informáticas o redes de computadores.
+
+Funcionamiento del Modelo OSI
+
+El funcionamiento del Modelo OSI depende directamente de sus siete capas, en las que descompone el complicado proceso de la
+comunicación digital. Al compartimentarlo, asigna a cada capa funciones muy específicas, dentro de una estructura jerárquica fija.
+Es como descomponer un problema, en siete más chicos, de ahí su estructura pasa a ser de capas. Esto hace mucho más fácil la búsqueda de
+problemas de conexionado, protocolo, o software.
+
+Capas del Modelo
+
+Son 7:
+
+FISICA: La capa más baja del modelo se encarga de la topología de red y las conexiones globales entre la computadora y la red,
+refiriéndose tanto al medio físico como a la manera en que la información se transmite.
+
+ENLACE: Se ocupa del redireccionamiento físico, detección de errores, acceso al medio y control del flujo durante la comunicación, siendo parte de la creación de protocolos básicos para regular la conexión entre los sistemas informáticos.
+
+RED: se encarga de la identificación del enrutamiento existente entre las redes involucradas, así, las unidades de datos pasan a denominarse “paquetes” y pueden clasificarse conforme al protocolo de enrutamiento o protocolo enrutable que utilizan.
+
+TRANSPORTE: donde se realiza el transporte de los datos que se hallan dentro de cada paquete, de la computadora de origen a la de destino, independientemente del medio físico que se emplee para ello.
+
+SESION: se encarga de controlar y mantener el vínculo entre las computadoras que intercambian datos, asegurándose de que, una vez establecida la comunicación entre ambos sistemas, el canal de transmisión de datos pueda retomarse en caso de interrumpirse.
+
+PRESENTACION: se ocupa de la representación de la información, o sea, de su traducción, garantizando que los datos recibidos en cualquier extremo de la red sean del todo reconocibles, sin importar el tipo de sistema empleado.
+
+APLICACIÓN: define los protocolos que emplean las aplicaciones para el intercambio de datos y les permite acceder a los servicios de cualquiera de las demás capas. Generalmente, todo este proceso es invisible para el usuario, quien rara vez interactúa con el nivel aplicación, sino con programas que interactúan con el nivel aplicación

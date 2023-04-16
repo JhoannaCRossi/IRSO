@@ -1,0 +1,50 @@
+1. CAPA DE APLICACIÓN (NIVEL 7)
+
+Una de las principales características de la capa de aplicación es la de definir los protocolos para intercambiar datos, y, además, es la que se encarga de acceder a los servicios de las demás capas.
+Cabe aclarar que el usuario normalmente no interactúa directamente con el nivel de aplicación. Suele interactuar con programas que a su vez interactúan con el nivel de aplicación, pero ocultando la complejidad subyacente.
+
+PROTOCOLOS MAS CONOCIDOS DE ESTA CAPA:
+
+FTP
+El Protocolo de transferencia de archivos (en inglés File Transfer Protocol o FTP) es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.
+Normalmente nosotros hacemos uso de este protocolo a través de algun cliente, como por ejemplo , FILEZILLA.
+
+HTTP
+Es el protocolo de comunicación que permite las transferencias de información en la World Wide Web.
+HTTP es un protocolo sin estado, es decir, no guarda ninguna información sobre conexiones anteriores. El desarrollo de aplicaciones web necesita frecuentemente mantener estado. Para esto se usan las cookies, que es información que un servidor puede almacenar en el sistema cliente. Esto les permite a las aplicaciones web instituir la noción de sesión, y también permite rastrear usuarios ya que las cookies pueden guardarse en el cliente por tiempo indeterminado.
+
+METODOS DE PETICION HTTP
+	GET: El método GET se emplea para leer una representación de un resource. En caso de respuesta positiva (200 OK), GET devuelve la representación en un formato concreto: HTML, XML, JSON o imágenes, JavaScript, CSS, etc. En caso de respuesta negativa devuelve 404 (
+notfound) o 400 (bad request).
+
+	POST:Aunque se puedan enviar datos a través del método GET, en muchos casos se utiliza POST por las limitaciones de GET. En caso de respuesta positiva devuelve 201 (created). Los POST requests se envían
+normalmente con formularios.
+	PUT:Utilizado normalmente para actualizar contenidos, pero también pueden crearlos. Tampoco muestra ninguna información en la URL. En caso de éxito devuelve 201 ( created, en caso de que la acción haya creado un elemento) o 204 (no response, si el servidor no devuelve ningún contenido).
+	DELETE:Simplemente elimina un resource identificado en la URI. Si se elimina correctamente devuelve 200 junto con un
+body response, o 204 sin body.
+
+2. CAPA DE PRESENTACION (NIVEL 6)
+
+El nivel de presentación o capa de presentación es el sexto nivel del Modelo OSI, y es el que se encarga de la representación de la información, de manera que aunque distintos equipos puedan tener diferentes representaciones internas de caracteres (ASCII, Unicode, EBCDIC), números (little-endian tipo Intel, big-endian tipo Motorola), sonido o imágenes, los datos lleguen de manera reconocible.
+En esta capa es en donde se definen estándares, por ejemplo, para el intercambio de archivos entre computadoras de distinta arquitectura, sistema operativo, versión.
+
+EJEMPLOS:
+	
+a. ESTANADRES DE IMÁGENES
+	-JPG
+	-GIF
+b. ESTANADRES DE SONIDO
+	-MP3
+	-WAV
+
+3. CAPA DE SESION (NIVEL 5)
+
+El nivel de sesión o capa de sesión es el quinto nivel del modelo OSI, que proporciona los mecanismos para controlar el diálogo entre las aplicaciones de los sistemas finales. En muchos casos, los servicios de la capa de sesión son parcialmente, o incluso, totalmente prescindibles. No obstante, en algunas aplicaciones su utilización es ineludible.
+La capa de sesión surge como una forma de organizar y sincronizar el diálogo y controlar el intercambio de datos.
+La capa de sesión permite a los usuarios de máquinas diferentes establecer sesiones entre ellos. Una sesión permite el transporte ordinario de datos, como lo hace la capa de transporte, pero también proporciona servicios mejorados que son útiles en algunas aplicaciones. Se podría usar una sesión para que el usuario se conecte a un sistema remoto de tiempo compartido o para transferir un archivo entre dos máquinas.
+
+PROTOCOLOS EN LA CAPA DE SESION
+	RPC:Es un programa que utiliza una computadora para ejecutar código en otra máquina remota sin tener que preocuparse por las comunicaciones entre ambas. El protocolo que se utiliza para esta llamada es un gran avance sobre los sockets de Internet usados hasta el momento. De esta manera el programador no tenía que estar pendiente de las comunicaciones, estando estas encapsuladas dentro de las RPC.
+	
+	SCP:El protocolo SCP es básicamente idéntico al protocolo RCP de BSD. A diferencia de RCP, los datos son cifrados durante su transferencia, para evitar que potenciales packet sniffers extraigan información útil de los paquetes de datos. Sin embargo, el protocolo mismo no provee autenticación y seguridad; sino que espera que el protocolo subyacente, SSH, lo asegure.
+El modo SCP, es un protocolo que deja al servidor y al cliente tener múltiples conversaciones sobre una TCP normal. Este protocolo está diseñado para ser simple de implementar.
