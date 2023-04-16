@@ -1,0 +1,64 @@
+Dados los siguientes diagramas, determinar el grado, la cardinalidad y la condicionalidad de la relación.
+
+Respuestas
+
+1) CAPITAN - 1,1 - TIENE - 1,1 - BUQUE
+La relación es de grado binaria.
+Es una relación de uno a uno.
+La relación No es condicional. 
+Un Buque tiene como minimo y como máximo un Capitán, y un Capitán trabaja como minimo y como máximo en un Buque.
+
+2)PAISES - 1,M - TIENE - 1,N - IDIOMAS OFICIALES
+La relación es de grado binaria.
+Es una relación de muchos a muchos.
+La relación No es condicional. 
+Al menos un Pais tiene uno o muchos Idiomas Oficiales, y al menos un Idioma Oficial existe en un o muchos Paises.
+
+3)EDIFICIO - 1,1 - TIENE - 1,N - ENCARGADO
+La relación es de grado binaria.
+Es una relación de uno a muchos.
+La relación No es condicional. 
+Un encargado trabaja en un edificio como minimo y en muchos edificios como máximo, y un edificio tiene uno y solo un encargado trabajando.
+
+4)ESPOSO - 1,1 - TIENE - 1,1 - ESPOSA
+La relación es de grado binaria.
+Es una relación de uno a uno.
+La relación No es condicional. 
+Una esposa tiene como minimo y máximo un solo esposo, y viceversa.
+
+5)SELECCION DE FUTBOL - 1,1 - TIENE - 1,1 - DIRECTOR TECNICO
+La relación es de grado binaria.
+Es una relación de uno a uno.
+La relación No es condicional. 
+Un director técnico dirige como minimo y máximo una selección de futbol, y a una selección de futbol como minimo y máximo la dirige un solo Director técnico.
+
+6)ALUMNO - 1,1 - TIENE - 0,M - MATERIAS APROBADAS
+La relación es de grado binaria.
+Es una relación de uno a muchos.
+La relación SI es condicional. 
+Un alumno puede tener muchas materias o ninguna, pero puede ser aprobada una materia como minimo y maximo por el mismo alumno.
+
+
+7)LIBRO - 1,M - TIENE - 1,N - AUTOR
+La relación es de grado binaria.
+Es una relación de muchos a muchos.
+La relación No es condicional. 
+Un autor puede haber escrito un libro como muchos, y un libro puede estar escrito por un autor, o por muchos.
+
+8)CLIENTE - 1,1 - TIENE - 1,M - TARJETA DE CREDITO
+La relación es de grado binaria.
+Es una relación de uno a muchos.
+La relación No es condicional.
+Una tarjeta de crédito puede pertenecer solo a un cliente, y un cliente puede tener una o muchas tarjetas de crédito
+
+9)EMPLEADO - 1,1 - TIENE - 1,M - IDIOMAS QUE CONOCE
+La relación es de grado binaria.
+Es una relación de uno a muchos.
+La relación No es condicional. 
+Un empleado puede conocer uno o muchos Idiomas, y esos idiomas puede tener como minimo y máximo un empleado.
+
+10)EMPLEADO - 1,M - TIENE - 1,1 -SINDICATO
+La relación es de grado binaria.
+Es una relación de muchos a uno.
+La relación No es condicional. 
+Un sindicato puede tener uno a muchos empleados, pero un empleado puede pertenecer solo a un sindicato.

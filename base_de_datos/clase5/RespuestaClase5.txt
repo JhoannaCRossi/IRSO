@@ -1,0 +1,45 @@
+ Ejercitación
+ 1*-
+ Respuestas
+ a)
+ “Un Jugador de Futbol puede pertenecer a uno o más equipos, y un Equipo de Futbol puede tener uno o más Jugadores de Futbol”
+
+Jugador Fultbol: @Nro_DNI_Jugador + Apellido_Jugador + Nombre_Jugador
+Equipo o Club: @Cod_Club + Nombre_Club + Division + Categoria
+TOA
+Contrato: @Nro_DNI_Jugador + @Cod_Club + Fecha_Contrato + Precio_Jugador
+
+b)
+“Una Editorial puede tener a uno o más Libros, y un Libro puede tener una o más Editoriales”
+
+Editorial: @Nro_CUIT_Editorial + Nombre_Editorial 
+LIbro: @Cod_ISBN_Libro + Titulo_Libro + Autor_Libro 
+TOA
+Edición: @Nro_CUIT_Editorial + @Cod_ISBN_Libro + Fecha_Impresion + Estado*
+
+*hago referencia al estado del libro, para saber si esta en impresión, o en aprobación, o en edición, y asi.
+
+c)
+“Un cliente puede ir a muchas o una Tienda, y una Tienda puede tener uno o más Clientes”
+
+Cliente: @Nro_DNI_Cliente + Apellido_Cliente + Nombre_Cliente + Medio_de_Pago
+Tienda: @Cod_CUIT_Tienda + Nombre_Tienda + Horario + Plan_de_Pagos
+TOA
+Compra: @Nro_DNI_Cliente + @Cod_CUIT_Tienda + Fecha_Compra + Precio_Compra 
+
+d)
+“Un proveedor puede tener 0 o mas productos que suministrar y un producto puede tener 1 o mas proveedores que lo suministren”.
+Proveedor: @Nro_CUIT_Proveedor + Nombre_Proveedor + Capacidad_Entrega
+Producto: @Cod_Producto + Nombre_Producto + Cantidad_en_Deposito_Producto
+TOA
+Pedido: @Nro_CUIT_Proveedor + @Cod_Producto + Hora_Entrega_Pedido
+
+2*-Dado el siguiente gráfico completarlo, y describir los datos del supertipo y de los subtipos.
+
+SuperTipo
+Transporte Publico: @Nro_Patente + Modelo + Tipo 
+SubTipos
+Tren: Cantidad_Vagones + Fuente_de_Energia + Capacidad_de_Carga
+Taxi: Color + Marca + Tipo_de_Trasmision + Cantidad_Puertas
+Camión: Color + Marca + Cantidad_de_Ruedas + Capacidad_de_Carga + Potencia
+

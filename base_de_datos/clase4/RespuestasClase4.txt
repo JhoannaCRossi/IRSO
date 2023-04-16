@@ -1,0 +1,11 @@
+Ejercitación:
+
+1*-Identificar cual de las siguientes afirmaciones es la correcta. Opción 1 o 2.
+
+Respuesta correcta = 1)_ Una relación es condicional si la estructura creada para la relación indica que la relación no es obligatoria.
+
+2*-Representen una relación condicional que ustedes elijan y expliquen esa relación como los ejemplos que están más arriba.
+
+CONDUCTORES - 1,N - TIENE - 0,M - TAXIS
+
+En este caso la relación es condicional en el sentido Conductores hacia Taxis es decir que un conductor puede no tener un taxi asignado (0,M) o tener varios, y en el sentido Taxis hacia Conductores podemos decir que un taxi puede tener uno  o muchos conductores asignados(1,N).
