@@ -17,3 +17,17 @@ public class Main {
 		}
 	}
 }
+
+//or
+
+/*public class Main {
+    public static void main(String[] args) throws Exception {
+        int limit = 200;
+        int acum = 0;        
+        for(int i=0;i<limit;i++){
+            System.out.println(i);
+            acum+=i*i;
+        }
+        System.out.println("Resultado total= "+acum);
+    }
+}*/
