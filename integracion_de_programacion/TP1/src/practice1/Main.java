@@ -12,7 +12,6 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		String input;
-		
 		float resultado = 0;
 		float valor1 = 0, valor2 = 0, valor3 = 0, valor4 = 0, valor5 = 0; 
 		//declaring array and allocating memory to array
@@ -20,22 +19,19 @@ public class Main {
 		
 		for (int i = 0; i < array.length; i++) {
 			do {          
-				System.out.println("Please, give me your "+(i+1)+" number! Please enter "
+				System.out.println("Please, give me your "
+						+(i+1)+" number! Please enter "
 						+ "numbers from 100 a -200");
 				input = sc.nextLine(); 
 			} while(!isANumberOnRange(input)); //check number
-			
 			array[i] = Integer.parseInt(input);
 		}
-		
 		valor1 = array[0];
 		valor2 = array[1];
 		valor3 = array[2];
 		valor4 = array[3];
 		valor5 = array[4];
-		
 		resultado = makeCalculated(valor1, valor2, valor3, valor4, valor5);
-		
 		System.out.println("\n");
 		System.out.println(resultado+" is the result!!");
 		sc.close();
