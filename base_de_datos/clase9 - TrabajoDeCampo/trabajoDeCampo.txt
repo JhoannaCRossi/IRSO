@@ -1,1 +1,14 @@
-trabajo de campo DER
+Pedido: Se solicita la informatización de la administración de turnos, para las diferentes especialidades médicas que se
+atienden en la clínica con los diferentes médicos. Actualmente se realiza en forma manual. Los datos de los pacientes se
+encuentran registrados, las especialidades disponibles y los médicos con los días y horarios en que atienden.
+Los pacientes pueden solicitar un turno con un especialista, cancelarlo y cambiarlo por otro turno.
+Considerar los días feriados, es decir si un médico atiende por ejemplo el día miércoles, y es feriado que no se pueda asig-
+nar un turno ese día. Los pacientes pueden estar asociados a una obra social o ser particulares.
+A su disposición para realizar relevo de información.
+
+Planteo:
+
+1ERA ETAPA
+Entidades = [MEDICOS, PACIENTES, TURNOS, ESPECIALIDAD, COBERTURA, HORARIOS]
+Tipos de Objetos Asociativos = [HISTORIA CLINICA, EMAIL CONFIRMACION TURNO]
+
