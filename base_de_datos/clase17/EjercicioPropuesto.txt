@@ -1,0 +1,4 @@
+Trabajo de Campo
+En esta clase continuamos con el trabajo iniciado en la clase N° 9, deben
+1° A las estructuras que pensaron, aplicarles las 3 formas normales, solo las estructuras no necesitan la explicación.
+2° Aplicar el Diagrama de Tablas y su diccionario de datos asociado, en base al Diagrama Entidad Relación que construyeron.
