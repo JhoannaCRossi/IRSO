@@ -1,0 +1,14 @@
+Ejercicios a realizar por el alumno.
+Normalización
+
+1)_ Dadas las siguientes estructuras de datos aplicar la Primera, Segunda y Tercera Forma Normal.
+
+a)_Reserva Hotel = #Reserva + Nombre_Hotel + Fecha_Ingreso + Fecha_Egreso + Apellido_Cliente + Nombre_Cliente + DNI_Cliente + Cantidad_Clientes.
+
+Nota: en cada reserva figura uno o mas clientes, Cantidad_Clientes es el número de clientes en esa reserva.
+
+b)_ Presupuesto_Solicitado = #Presupuesto + Fecha del dia + Fecha Caducidad Presupuesto + Razón Social + Codigo Producto + Descripción Producto + Precio Unitario + Cantidad + Precio x Cantidad + Precio Total.
+
+c)_ Clinica_Medica = #Clinica + Nombre_Clinica + Dirección_Clinica + Teléfono_Clinica+ #Matricula_Medico + Apellido_Nombre_Medico + Fecha_Ingreso_a_la_Clinica + Codigo_Especialidad + Nombre_Especialidad
+Nota: Especialidad, es la del médico. 
+

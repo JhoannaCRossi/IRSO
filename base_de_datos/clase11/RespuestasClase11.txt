@@ -1,0 +1,39 @@
+Ejercicios a realizar por el alumno
+a)_ Pedido de Fabricación = Nro_Pedido + Nro_Proveedor + Razon_Social + Fecha + CUIT Proveedor + Código_Articulo + Descripción Artículo + Cantidad + Cantidad Total Pedida de Artículos.
+
+Identificamos clave primaria = 
+Pedido de Fabricación = @Nro_Pedido + @Nro_Proveedor +  Razon_Social + CUIT Proveedor + Fecha + {@Código_Articulo + Descripción Artículo + Cantidad} + Cantidad Total Pedida de Artículos.
+
+Primera Forma Formal = 
+Pedido de Fabricación = @Nro_Pedido + @Nro_Proveedor + Razon_Social + Fecha + CUIT Proveedor + Cantidad Total Pedida de Artículos.
+Pedido_Articulo =  @Nro_Pedido+ @Código_Articulo + Descripción Artículo + Cantidad
+
+Segunda Forma Formal =
+Pedido de Fabricación = @Nro_Pedido + @Nro_Proveedor + Razon_Social + Fecha + CUIT Proveedor + Cantidad Total Pedida de Artículos. 
+Pedido_Articulo =  @Nro_Pedido+ @Código_Articulo + Cantidad
+Articulo = @Código_Articulo +  Descripción Artículo
+
+Tercera Forma Formal = 
+(Elimino cantidad total pedida de articulos porque se puede deducir por el atributo cantidad cantidad y el proveedor lo separo)
+Pedido de Fabricación = @Nro_Pedido + @Nro_Proveedor + Fecha
+Pedido_Articulo =  @Nro_Pedido+ @Código_Articulo + Cantidad
+Articulo = @Código_Articulo +  Descripción Artículo
+Proveedor = @Nro_Proveedor + Razon_Social +  CUIT Proveedor
+
+b)_ Empresa = Nro_Empresa + Razon_Social + Nro_Sucursal + Dirección_Sucursal +  Localidad_Sucursal + CUIT_Empresa + Rubro_Empresa.
+
+Identificamos clave primaria = 
+Empresa = @Nro_Empresa + Razon_Social + CUIT_Empresa + Rubro_Empresa + {@Nro_Sucursal + Dirección_Sucursal +  Localidad_Sucursal}
+
+Entonces queda
+Empresa = @Nro_Empresa + Razon_Social + CUIT_Empresa + Rubro_Empresa
+Empresa_Sucursal = @Nro_Empresa + @Nro_Sucursal + Dirección_Sucursal +  Localidad_Sucursal
+
+Segunda Forma Formal =
+(Empresa ya tiene una clave con un solo atributo y como en sucursal direccion y localidad este relacionado con la sucursal tambien queda igual)
+Empresa = @Nro_Empresa + Razon_Social + CUIT_Empresa + Rubro_Empresa
+Empresa_Sucursal = @Nro_Empresa + @Nro_Sucursal + Dirección_Sucursal +  Localidad_Sucursal
+
+Tercera Forma Formal = (queda asi por no tener atributos independientes)
+Empresa = @Nro_Empresa + Razon_Social + CUIT_Empresa + Rubro_Empresa
+Empresa_Sucursal = @Nro_Empresa + @Nro_Sucursal + Dirección_Sucursal +  Localidad_Sucursal

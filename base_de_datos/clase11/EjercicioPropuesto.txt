@@ -1,0 +1,4 @@
+Ejercicios a realizar por el alumno
+a)_ Pedido de Fabricación = Nro_Pedido + Nro_Proveedor + Razon_Social + Fecha + CUIT Proveedor + Código_Articulo + Descripción Artículo + Cantidad + Cantidad Total Pedida de Artículos.
+
+b)_ Empresa = Nro_Empresa + Razon_Social + Nro_Sucursal + Dirección_Sucursal +  Localidad_Sucursal + CUIT_Empresa + Rubro_Empresa.

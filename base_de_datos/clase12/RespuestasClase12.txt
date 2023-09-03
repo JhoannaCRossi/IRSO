@@ -1,0 +1,70 @@
+Ejercicios a realizar por el alumno.
+Normalización
+
+1)_ Dadas las siguientes estructuras de datos aplicar la Primera, Segunda y Tercera Forma Normal.
+
+a)_Reserva Hotel = #Reserva + Nombre_Hotel + Fecha_Ingreso + Fecha_Egreso + Apellido_Cliente + Nombre_Cliente + DNI_Cliente + Cantidad_Clientes.
+
+Nota: en cada reserva figura uno o mas clientes, Cantidad_Clientes es el número de clientes en esa reserva.
+
+Identifico=
+Reserva Hotel = @#Reserva + Nombre_Hotel + Fecha_Ingreso + Fecha_Egreso + {Apellido_Cliente + Nombre_Cliente + @DNI_Cliente} + Cantidad_Clientes.
+
+Primera Forma Normal
+Reserva_Hotel = @Reserva + Nombre_Hotel + Fecha_Ingreso + Fecha_Egreso + Cantidad_Clientes.
+Cliente_Hotel = @Reserva + @DNI_Cliente + Apellido_Cliente + Nombre_Cliente
+
+
+
+Segunda Forma Normal
+Reserva_Hotel = @Reserva + Nombre_Hotel + Fecha_Ingreso + Fecha_Egreso.
+Cliente_Hotel = @Reserva + @DNI_Cliente + Apellido_Cliente + Nombre_Cliente
+Reserva_Cliente = @Reserva + Cantidad_Clientes.
+
+Tercera Forma Normal = queda igual al no haber dependencias transitivas
+Reserva_Hotel = @Reserva + Nombre_Hotel + Fecha_Ingreso + Fecha_Egreso.
+Cliente_Hotel = @Reserva + @DNI_Cliente + Apellido_Cliente + Nombre_Cliente
+Reserva_Cliente = @Reserva + Cantidad_Clientes.
+
+
+b)_ Presupuesto_Solicitado = #Presupuesto + Fecha del dia + Fecha Caducidad Presupuesto + Razón Social + Codigo Producto + Descripción Producto + Precio Unitario + Cantidad + Precio x Cantidad + Precio Total.
+
+Identifico
+Presupuesto_Solicitado = @Presupuesto + Fecha del dia + Fecha Caducidad Presupuesto + Razón Social + {Codigo Producto + Descripción Producto + Precio Unitario + Cantidad} + Precio x Cantidad + Precio Total.
+
+Primera Forma Normal
+Presupuesto_Solicitado = @Presupuesto + Fecha_del_dia + Fecha_Caducidad_Presupuesto + Razón_Social + Precio_x_Cantidad + Precio_Total.
+Producto_Presupuesto = @Presupuesto + @Codigo_Producto + Descripción _Producto + Precio_Unitario + Cantidad
+
+
+
+
+Segunda Formal Normal
+Presupuesto_Solicitado = @Presupuesto + Fecha_del_dia + Fecha_Caducidad_Presupuesto + Razón_Social + Precio_x_Cantidad + Precio_Total.
+Producto_Presupuesto = @Presupuesto + @Codigo_Producto  + Cantidad
+Producto = @Codigo_Producto + Descripción _Producto + Precio_Unitario
+
+Tercera Forma Normal
+Presupuesto_Solicitado = @Presupuesto + Fecha_del_dia + Fecha_Caducidad_Presupuesto + Razón_Social  + Precio_Total.
+Producto_Presupuesto = @Presupuesto + @Codigo_Producto  + Cantidad
+Producto = @Codigo_Producto + Descripción _Producto + Precio_Unitario
+
+c)_ Clinica_Medica = #Clinica + Nombre_Clinica + Dirección_Clinica + Teléfono_Clinica+ #Matricula_Medico + Apellido_Nombre_Medico + Fecha_Ingreso_a_la_Clinica + Codigo_Especialidad + Nombre_Especialidad
+Nota: Especialidad, es la del médico. 
+Identifico
+Clinica_Medica = @#Clinica + Nombre_Clinica + Dirección_Clinica + Teléfono_Clinica+ @#Matricula_Medico + Apellido_Nombre_Medico + Fecha_Ingreso_a_la_Clinica + {Codigo_Especialidad + Nombre_Especialidad}
+ 
+Primera Forma Normal
+Clinica_Medica = @Clinica + Nombre_Clinica + Dirección_Clinica + Teléfono_Clinica
+Medico_Clinica = @Clinica + @Matricula_Medico + Apellido_Nombre_Medico + Fecha_Ingreso_a_la_Clinica + Codigo_Especialidad + Nombre_Especialidad
+
+Segunda Forma Normal
+Clinica_Medica = @Clinica + Nombre_Clinica + Dirección_Clinica + Teléfono_Clinica
+Medico_Clinica = @Clinica + @Matricula_Medico + Apellido_Nombre_Medico + Fecha_Ingreso_a_la_Clinica
+Especialidad_Medico = @Matricula_Medico + Codigo_Especialidad + Nombre_Especialidad
+
+Tercera Forma Normal = queda igual al no haber dependencias transitivas
+
+Clinica_Medica = @Clinica + Nombre_Clinica + Dirección_Clinica + Teléfono_Clinica
+Medico_Clinica = @Clinica + @Matricula_Medico + Apellido_Nombre_Medico + Fecha_Ingreso_a_la_Clinica
+Especialidad_Medico = @Matricula_Medico + Codigo_Especialidad + Nombre_Especialidad
