@@ -16,12 +16,6 @@
       - Clase 2: [Ciclos, Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase2/EjerciciosPropuestosClase2.txt)
 </details>
 <details>
-  <summary>Análisis Matemático 2022</summary>
-  
-  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico)
-      - Clase 1: [Ejes Coordenadas, Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/analisis_matematico/Unidad1-Modelizacion)
-</details>
-<details>
   <summary>Base de Datos 2022 - SQL y MYSQL</summary>
   
   - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos)
@@ -84,19 +78,7 @@
          - [Práctica 2](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassTwelfth/src/practice2) 
          - [Práctica 3](https://github.com/JhoannaCRossi/IRSO/tree/master/integracion_de_programacion/ClassTwelfth/src/practice3)
       - TP1: [TP1](https://github.com/JhoannaCRossi/IRSO/blob/master/integracion_de_programacion/TP1)
-</details>
-<details>
-  <summary>Redes 2022</summary>
-  
-  - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/redes)
-      - Clase 1: [Redes, Tipos de Redes, Arquitectura de Capas](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase1)
-      - Clase 2: [Componentes de Red, software, topología de red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase2)
-          - [Cuestionario Clase 2](https://github.com/JhoannaCRossi/IRSO/blob/master/redes/clase2/CuestionarioClase2.txt)
-      - Clase 3: [Tipos Componentes de Red](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase3)
-      - Clase 4: [Modelo OSI](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase4)
-      - Clase 5: [Capas Modelo OSI](https://github.com/JhoannaCRossi/IRSO/tree/master/redes/clase5)
-</details>
-      
+</details>   
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhoanna-castellanos/)
