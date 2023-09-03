@@ -1,0 +1,9 @@
+Ejercitación:
+
+Dado el siguiente Diagrama Entidad Relación y su Diccionario de Datos, construir el Diagrama de Tablas y su Diccionario de Datos.
+
+Diccionario de Datos
+Micro = @#Micro + Modelo + Marca + Año Fabricación + Cantidad_Asientos.
+Chofer = @#Legajo + Apellido + Nombre + Tipo Documento + #Documento + Fecha Nacimiento.
+Recorridos = @#Recorrido + Localidad Salida + Hora Salida+ Localidad Llegada + Hora Llegada + Km_Recorridos.
+Viaje = @#Micro + @#Legajo + @fecha + Día Salida + Hora Salida Efectiva + Día llegada + Hora Llegada Efectiva. 

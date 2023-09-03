@@ -1,0 +1,23 @@
+CONSIGNAS:
+1)_ Dado el siguiente enunciado construir el Diagrama Entidad Relación (DER) con su Diccionario de Datos asociado.
+
+Empresa Argentina de Desarrollo de Software.
+Esta empresa cuenta entre sus empleados Analistas de Sistemas, Testeadores y Programadores.
+Un empleado puede estar asignado a uno o varios proyectos y un proyecto puede tener asignado desde uno a varios empleados, de esta relación surgen las actividades que realizan cada empleado en el proyecto, la fecha en la que comenzó a trabajar en el proyecto y la fecha de finalización de su trabajo que puede ser nula.
+Un empleado tiene una categoría y una categoría puede tener uno o 10 empleados como máximo, dentro de las categorías encontramos a los asistentes, juniors, semi seniors, seniors.
+Todo proyecto puede tener asociado ninguno o varios proveedores de equipamiento, y un proveedor puede serlo de uno o varios proyectos de los cuales surgen las condiciones de contratación. 
+
+2)_ Dadas las siguientes relaciones entre elementos, se pide: describir grado, conectividad y condicionalidad.
+a)_ imagen
+b)_ imagen
+c)_ imagen
+d)_ imagen
+
+3)_  Dada la siguiente estructura de datos, aplicar las 3 Formas Normales.
+Importante: explicar cada paso del desarrollo.
+
+Pedido de Precios = #Pedido + Fecha del dia + Dias de Vigencia + Razón Social + Codigo Producto + Descripción Producto + Precio Unitario + Cantidad + Precio x Cantidad + Precio Total.
+
+4)_ Representar la siguiente estructura de Supertipo y Subtipo incluyendo el Diccionario de Datos asociado.
+
+Vehículos, Máquinas Viales, Camiones, Tractores.

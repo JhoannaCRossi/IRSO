@@ -1,0 +1,2 @@
+Ejercitación:
+Considerando el ejercicio resuelto del módulo, Empresa constructora de edificios, pasando por todos los puntos incluyendo Normalización construir el Diagrama de Tablas.

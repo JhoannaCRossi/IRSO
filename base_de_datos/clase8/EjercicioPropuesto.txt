@@ -1,0 +1,15 @@
+Ejercitación
+1) Dado el siguiente enunciado construir el Diagrama Entidad Relación con su Diccionario de Datos asociado.
+
+Dado el siguiente enunciado construir el Diagrama Entidad Relación con su Diccionario de Datos asociado.
+Fabrica de celulares
+Un modelo de celular tiene de 35 a 48 componentes y un componente puede serlo de uno o varios modelos de celulares. Un modelo es fabricado por uno o varios operarios, aunque un operario se especializa en un modelo, todos los días el operario completa una Planilla de Fabricación donde figuran el modelo, el operario, el día y la cantidad fabricada. Los celulares son vendidos a los negocios de venta minorista de todo el país, un modelo es vendido en uno o varios negocios y un negocio vende varios modelos, de esta relación surge una factura por la venta.
+Nota: incluir en el Diccionario de Datos todos los ítems necesarios.
+
+2) Dado el siguiente enunciado construir el Diagrama Entidad Relación con su Diccionario de Datos asociado.
+Empresa de construcciones viales.
+Esta empresa se ocupa de movimientos de tierra, señalización, asfalto entre otras actividades, en toda la Argentina.
+Cada Obra tiene asignada uno o muchos empleados y cada empleado esta relacionado a una sola obra.
+Una obra esta relacionada con Maquinaria, entre las que encontramos camiones, excavadoras sobre oruga, topadoras, compactadoras, etc, cada obra tiene asignada una o más maquinarias, y una maquinaria puede estar relacionada con una o más obras, por cada máquina que se utiliza en la obra se registra en una Planilla de Uso, el día, horas y trabajo realizado.
+La maquinaria puede ser propia o alquilada a un Proveedor, si es alquilada existe un Contrato de Alquiler, relacionando la maquinaria con el proveedor.
+Nota: incluir en el Diccionario de Datos todos los ítems necesarios.

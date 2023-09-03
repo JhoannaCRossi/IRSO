@@ -1,0 +1,5 @@
+Ejercitación
+Fabrica de circuitos impresos.
+Esta fábrica se encuentra ubicada en la provincia de San Juan, donde se fabrican diferentes modelos de circuitos.
+Un modelo de circuito está compuesto de 203 a 470 componentes y un componente puede serlo de uno o varios modelos. Un modelo es fabricado por uno o varios operarios aunque un operario se especializa en un modelo, todos los días el operario completa una Planilla de Fabricación donde figuran el modelo, el operario, el día y la cantidad fabricada. Los circuitos son vendidos a los negocios de venta de electrónica y computación de todo el país, un modelo es vendido en uno o varios negocios y un negocio vende varios modelos, de esta relación surge una factura por la venta.
+Nota: incluir en el Diccionario de Datos todos los ítems necesarios.
