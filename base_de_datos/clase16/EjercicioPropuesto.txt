@@ -1,0 +1,11 @@
+Diagrama de Tablas
+Dado el siguiente Diagrama Entidad Relación y su Diccionario de Datos, construir el Diagrama de Tablas y su Diccionario de Datos.
+Instituto de Nivel Superior
+
+Diccionario de Datos
+
+Bibliografía = @Cod_Libro + Nombre + autores + edición
+Materias = @Cod_Materia + Nombre+ carga_horaria
+Carrera = @Cod_Carrera + Nombre_Carrera + duración 
+Alumnos = @Nro_Dni + Apellido + Nombre + Fecha_nacimiento
+Evaluaciones = @Nro_Dni + @Cod_Materia + Nota + fecha

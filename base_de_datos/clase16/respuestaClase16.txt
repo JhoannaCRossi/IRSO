@@ -1,0 +1,111 @@
+    • Diccionario de DER
+Entidades
+Bibliografía = @Cod_Libro + Nombre + autores + edición
+Materias = @Cod_Materia + Nombre+ carga_horaria
+Carrera = @Cod_Carrera + Nombre_Carrera + duración 
+Alumnos = @Nro_Dni + Apellido + Nombre + Fecha_nacimiento
+Tipos de Objeto Asociativo
+Evaluaciones = @Nro_Dni + @Cod_Materia + Nota + fecha
+
+
+       - Normalización
+    • Bibliografía = se encuentra en su 1NF, 2NF y 3NF.
+    • Materias = se encuentra en su 1NF, 2NF y 3NF.
+    • Carrera = se encuentra en su 1NF, 2NF y 3NF.
+    • Alumnos = se encuentra en su 1NF, 2NF y 3NF
+    • Evaluaciones = se encuentra en su 1NF, 2NF y 3NF
+      
+      - Diagrama de Tablas
+
+
+
+
+
+
+
+
+
+
+      - Diccionario de Tablas
+BIBLIOGRAFIA = @Cod_Libro + Nombre + autores + edición
+donde @Cod_Libro es la PrimaryKey de la tabla BIBLIOGRAFIA
+
+MATERIAS = @Cod_Materia + Nombre+ carga_horaria
+donde @Cod_Materia es la PrimaryKey de la tabla MATERIAS
+
+CARRERA = @Cod_Carrera + Nombre_Carrera + duración 
+donde @Cod_Carrera es la PrimaryKey de la tabla CARRERA
+
+ALUMNOS = @Nro_Dni + Apellido + Nombre + Fecha_nacimiento
+donde @Nro_Dni  es la PrimaryKey de la tabla ALUMNOS
+
+EVALUACIONES = @Nro_Dni + @Cod_Materia + @Nota + fecha
+donde @Nota  es la PrimaryKey de la tabla EVALUACIONES
+donde @Nro_Dni Es la ForengKey correspondiente a la tabla ALUMNOS
+donde @Cod_Materia Es la ForengKey correspondiente a la tabla MATERIAS
+
+      - Tablas
+BIBLIOGRAFIA 
+Cod_Libro
+number(10)
+obligatorio
+Nombre
+char(30)
+
+Autores
+char(30)
+
+edición
+number(4)
+
+
+MATERIAS 
+Cod_Materia
+number(10)
+obligatorio
+Nombre
+char(30)
+
+carga_horaria
+char(30)
+
+
+CARRERA 
+Cod_Carrera 
+number(10)
+obligatorio
+Nombre_Carrera
+char(30)
+
+duración
+date
+
+
+ALUMNO 
+Nro_Dni
+number(10)
+obligatorio
+Nombre
+char(30)
+
+Apellido
+char(30)
+
+Fecha_nacimiento
+date
+
+
+EVALUACIONES 
+Nro_Dni
+number(10)
+obligatorio
+Cod_Materia
+number(10)
+obligatorio
+Nota
+number(10)
+obligatorio
+fecha
+date
+obligatorio
+
