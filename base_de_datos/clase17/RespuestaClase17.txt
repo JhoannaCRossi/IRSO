@@ -1,0 +1,360 @@
+Trabajo de Campo
+En esta clase continuamos con el trabajo iniciado en la clase N° 9, deben
+1° A las estructuras que pensaron, aplicarles las 3 formas normales, solo las estructuras no necesitan la explicación.
+2° Aplicar el Diagrama de Tablas y su diccionario de datos asociado, en base al Diagrama Entidad Relación que construyeron.
+- DER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- DICCIONARIO DE DER
+Entidades
+Cobertura = @id_cobertura + razon_social + cuit + email + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+Pacientes = @id_paciente + nombres + apellidos + dni + direccion + email + telefono + sexo + + fecha_nacimiento +  fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+Medicos = @id_medico + nombres + apellidos + dni + direccion + email + telefono + sexo + num_colegiatura + fecha_nacimiento +  fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+Turnos = @id_medico + @id_paciente + @fecha_atencion + fecha_inicio + fecha_final + estado + observacion + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+Especialidad = @id_especialidad + nombre + descripcion + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+Horarios = @id_horario + @id_medico + @fecha_atencion + fecha_inicio + fecha_final + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+
+Tipos de Objeto Asociativo
+Historia Clinica = @id_historia + @id_medico + @id_paciente + diagnostico + fecha_ultima_atencion + tratamiento + @id_cobertura + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+Email Confirmacion Turno = @id_email + @id_paciente + @id_turno + @id_medico + @id_especialidad +  fecha_confirmacion
+
+- Normalización
+Al no encontrar dependencias transitivas ya que cada columna no clave depende directamente de la clave primaria o de una clave externa. Diria que ya se encuentra en su 3fn.
+    • Cobertura = se encentra en su 1FN, 2FN Y 3FN.
+    • Pacientes = se encentra en su 1FN, 2FN Y 3FN.
+    • Medicos = se encentra en su 1FN, 2FN Y 3FN.
+    • Turnos = se encentra en su 1FN, 2FN Y 3FN.
+    • Especialidad = se encentra en su 1FN, 2FN Y 3FN.
+    • Horarios = se encentra en su 1FN, 2FN Y 3FN.
+    • Historia_clinica = se encentra en su 1FN, 2FN Y 3FN.
+    • Email_confirmacion_turno = se encentra en su 1FN, 2FN Y 3FN.
+
+
+
+
+
+
+- Diagrama de tablas
+
+- Diccionario de Tablas
+Cobertura = @id_cobertura + razon_social + cuit + email + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @id_cobertura es la primarykey de la tabla cobertura)
+
+Pacientes = @id_paciente + nombres + apellidos + dni + direccion + email + telefono + sexo + + fecha_nacimiento +  fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @id_paciente  es la primarykey de la tabla pacientes)
+
+Medicos = @id_medico + nombres + apellidos + dni + direccion + email + telefono + sexo + num_colegiatura + fecha_nacimiento +  fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @id_medico  es la primarykey de la tabla medicos)
+
+Turnos = @id_medico + @id_paciente + @fecha_atencion + fecha_inicio + fecha_final + estado + observacion + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @fecha_atencion  es la primarykey de la tabla turnos,
+@id_medico es la forengkey hacia la tabla medicos,
+@id_paciente es la forengkey hacia la tabla pacientes)
+
+Especialidad = @id_especialidad + nombre + descripcion + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @id_especialidad es la primarykey de la tabla especialidad)
+
+Horarios = @id_horario + @id_medico + @fecha_atencion + fecha_inicio + fecha_final + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @id_horario  es la primarykey de la tabla horarios,
+@id_medico es la forengkey hacia la tabla medicos,
+@fecha_atencion es la forengkey hacia la tabla turno)
+
+Historia Clinica = @id_historia + @id_medico + @id_paciente + diagnostico + fecha_ultima_atencion + tratamiento + @id_cobertura + fecha_registro + fecha_modificacion + usuario_registro + usuario_modificacion
+(donde @id_historia   es la primarykey de la tabla historia_clinica,
+@id_medico es la forengkey hacia la tabla medicos,
+@id_paciente es la forengkey hacia la tabla paciente,
+@id_cobertura es la forengkey hacia la tabla cobertura)
+
+Email Confirmacion Turno = @id_email + @id_paciente + @id_turno + @id_medico + @id_especialidad +  fecha_confirmacion
+(donde @id_email  es la primarykey de la tabla email_confirmacion_turno,
+@id_medico es la forengkey hacia la tabla medicos,
+@id_paciente es la forengkey hacia la tabla paciente,
+@id_turno es la forengkey hacia la tabla turnos,
+@id_especialidad de la forenkey hacia la tabla especialidad)
+
+- Tablas
+Cobertura 
+id_cobertura
+number(10)
+obligatorio
+razon_social
+char(30)
+obligatorio
+cuit
+char(30)
+obligatorio
+mail
+char(30)
+obligatorio
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+Pacientes 
+
+id_paciente
+number(10)
+obligatorio
+nombres
+char(30)
+obligatorio
+apellidos
+char(30)
+obligatorio
+dni
+char(9)
+obligatorio
+direccion
+char(30)
+
+email
+char(30)
+obligatorio
+sexo
+char(1)
+
+telefono
+char(10)
+
+num_colegiatura
+number(10)
+obligatorio
+fecha_nacimiento
+date
+obligatorio
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+Medicos 
+
+id_medico
+number(10)
+obligatorio
+nombres
+char(30)
+obligatorio
+apellidos
+char(30)
+obligatorio
+dni
+char(9)
+obligatorio
+direccion
+char(30)
+
+email
+char(30)
+obligatorio
+sexo
+char(1)
+obligatorio
+telefono
+char(10)
+obligatorio
+fecha_nacimiento
+date
+obligatorio
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+Turnos 
+
+id_medico
+number(10)
+obligatorio
+id_paciente
+number(10)
+obligatorio
+fecha_atencion
+date
+obligatorio
+fecha_inicio
+date
+obligatorio
+fecha_final
+date
+
+estado
+char(1)
+obligatorio
+observacion
+char(30)
+obligatorio
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+
+Especialidad 
+
+id_especialidad
+number(10)
+obligatorio
+nombre
+char(30)
+obligatorio
+descripcion
+char(30)
+obligatorio
+fecha
+date
+obligatorio
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+Horarios
+
+id_horario
+number(10)
+obligatorio
+id_medico
+number(10)
+obligatorio
+fecha_atencion
+date
+obligatorio
+fecha_inicio
+date
+obligatorio
+fecha_fina
+date
+
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+Historia_Clinica
+
+id_historia
+number(10)
+obligatorio
+id_medico
+number(10)
+obligatorio
+id_cobertura
+number(10)
+obligatorio
+id_paciente
+number(10)
+obligatorio
+diagnostico
+char(30)
+obligatorio
+fecha_ultima_atencion
+date
+obligatorio
+tratamiento
+char(30)
+
+fecha_registro
+date
+
+fecha_modificacion
+date
+
+usuario_registro
+numer(10)
+
+usuario_modificacion
+numer(10)
+
+
+Email_confirmacion_turno
+
+id_email
+number(10)
+obligatorio
+id_paciente
+number(10)
+obligatorio
+id_turno
+number(10)
+obligatorio
+id_paciente
+number(10)
+obligatorio
+id_medico
+number(10)
+obligatorio
+id_especialidad
+number(10)
+obligatorio
+ fecha_confirmacion
+date
+
+

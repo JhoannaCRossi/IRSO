@@ -1,0 +1,20 @@
+Desarrollo de la evaluación
+
+1.- ¿Qué es una base de datos? ¿Por qué se debe utilizar conectores para que éstas puedan ser leídas y modificadas desde diversas plataformas de programación? (ej.: Visual Basic, Eclipse, C++, etc.).
+
+2.- Desarrolle los Script (comandos) vistos para poder generar una nueva tabla en lenguaje SQL, crear columnas; insertar, modificar y eliminar variables. Explique cómo funciona cada uno y dé ejemplos funcionales de cómo implementar los mismos.
+
+3.- Genere una Tabla de nombre “Medicamentos”, que posea 5 columnas (Laboratorio, Nombre, Vencimiento, Lote y ConReceta), asignando el tipo de variable que considere mejor para cada caso.
+
+4.- Al ejercicio anterior, desarrollar los Script necesarios para agregar los siguientes pacientes a la Tabla. Enviar también la imagen del resultado obtenido.
+
+    • Ingreso 1: (Roemers, Multiflora Plus, 21-12-2021, HN26, No)
+    • Ingreso 2: (Laboratorios Raffo, Paracetamol Raffo,01-01-2022, 27JMN, No)
+    • Ingreso 3: (Bayer, Action, 12-01-2022, 8H7J, No)
+    • Ingreso 4: (Bagó, Neuryl, 03-01-2022, HSG263, Si)
+
+5.- Continuando con el punto anterior, generar dos tablas unidas por una relación (unión). Determine cuál sería la relación más conveniente. 
+
+Tabla 1: “Costos” y que posea 2 columnas (ID, y Costo), asignando el tipo de variables que considere mejor para cada caso.
+
+Tabla 2: “Productos” y que posea 4 columnas (ID, Tipo, Cantidad y Descripción), asignando el tipo de variables que considere mejor para cada caso.
