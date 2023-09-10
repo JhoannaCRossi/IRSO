@@ -20,7 +20,7 @@ public class Main {
 
 //or
 
-/*public class Main {
+/*public class Main.java {
     public static void main(String[] args) throws Exception {
         int limit = 200;
         int acum = 0;        
