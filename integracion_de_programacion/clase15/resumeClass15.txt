@@ -1,0 +1,72 @@
+Clases y funciones
+
+Un método vuelve al código del que se llamó en el momento en el que alguna de estas circunstancias se dé:
+- se completan todas las sentencias del método,
+- llega a una sentencia retorno o
+- lanza una excepción,
+
+El tipo de retorno de un método se especifica en la declaración del método.
+
+Dentro del cuerpo del método, se utiliza la sentencia return para devolver el valor.
+
+Cualquier método que esté declarado como void, no devolverá ningún valor.
+
+Si se intenta devolver un valor desde un método declarado void, aparecerá un error de compilación.
+
+Cualquier método que no sea declarado void, deberá contener una sentencia return con su correspondiente valor de retorno.
+
+El tipo de dato del valor de retorno deberá coincidir con el tipo de retorno de la declaración del método. No se puede retornar un valor integer, a un método en el que en su declaración aparece como valor de retorno, un boolean.
+
+Ejemplo:
+
+package Tutorial;
+import java.util.Scanner;
+
+public class Tutorial11 {
+	public static void main(String[] args) {
+		int[] array = new int[5];
+		Scanner scanner = new Scanner(System.in);
+		insertarDatosArray(array, scanner);
+		sumarArray(array);
+		int max = maxArray(array);
+		System.out.println("Max= " + max);
+		double promedio = promedioArray(array);
+		System.out.println("Promedio= " + promedio);
+	}
+
+	private static void insertarDatosArray(int[] array, Scanner scanner) {
+		for (int i = 0; i<array.length; i++) {
+			System.out.print("insertararray[" + i + "]:");
+			array[i] = scanner.nextInt();
+		}
+	}
+	
+	private static void sumarArray(int[] array) {
+		System.out.print("Suma: ");
+		int acumulador = 0;
+		for (int i = 0; i<array.length; i++) {
+			acumulador = acumulador + array[i];
+			System.out.print("+" + array[i]);
+		}
+		System.out.println("= " + acumulador);
+	}
+	
+	private static int maxArray(int[] array) {
+		int max = 0;
+		for (int i = 0; i<array.length; i++) {
+			if (array[i] > max) {	
+				max = array[i];
+			}
+		}
+		return max;
+	}
+	
+	private static double promedioArray(int[] array) {
+		double promedio = 0;
+		for (int i = 0; i<array.length; i++) {
+			promedio = promedio + array[i];
+		}
+		promedio = promedio / array.length;
+		return promedio;
+	}
+}
