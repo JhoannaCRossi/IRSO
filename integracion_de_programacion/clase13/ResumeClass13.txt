@@ -1,0 +1,48 @@
+¿Qué es encapsulamiento?
+El encapsulamiento es la única técnica de poder ocultar datos / información del alcance del usuario en forma directa. O sea, que es posible acceder a dichainformación pero exclusivamente a través de un llamado.
+
+- Atributos de clase siempre privados, se deberian acceder por medio de getters.
+- Si hay métodos que pertenecen a la clase, se acceden a estos atributos con this.
+- Aquellos atributos que necesitamos que puedas ser accedidos por medio de su nombre o utilizando el nombre de la clase punto nombre del atributo los hacemos estaticos.
+
+Ejemplo: 
+
+public class Estudiante {
+	// Atributos - Variables delaClase
+	private int DNI;
+	private String Nombre;
+	private String Apellido;
+
+	// Atributos - Variables delaClase
+	public Estudiante(intdni, String nombre, String apellido) {
+		super();
+		DNI = dni;
+		Nombre = nombre;
+		Apellido = apellido;
+	}
+
+	publicint getEdad() {
+		returnDNI;
+	}
+
+	public void setEdad(intdni) {
+		DNI = dni;
+	}
+
+	public String getNombre() {
+		returnNombre;
+	}
+
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+
+	public String getApellido() {
+		returnApellido;
+	}
+	
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+}
+
