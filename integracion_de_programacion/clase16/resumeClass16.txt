@@ -1,0 +1,52 @@
+Almacenamiento en Archivos
+
+Tal como hemos visto, es posible ingresar, procesas e imprimir variables de todo tipo. Realizar desde el proceso más sencillo hasta el más complejo. Pero qué sucede cuando uno sale del programa o bien apaga la PC? Justamente ese será
+el punto de partida de esta clase. El almacenamiento de información dentro de archivos (lectura y escritura).
+
+Java IO (Input / Output)
+
+Ejemplo de FileWriter y FileReader
+
+importjava.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class C1 {
+	public static void main(String args[]) throws IOException {
+		File file = new File("Fich1.txt");
+		file.createNewFile(); // crea el fichero
+		FileWriter writer = new FileWriter(file);
+		writer.write("Game\n Thrones\n");
+		writer.flush();
+		writer.close();
+
+		FileReaderfr = new FileReader(file);
+		char[] a = new char[50];
+		fr.read(a); // lee el contenido del array
+		
+		for (char c : a){
+			System.out.print(c);
+			fr.close();
+		}
+	}	
+}
+
+BufferedReader y BufferedWriter
+
+Sin buffer cada petición de lectura o escritura es manejada directamente por el sistema operativo subyacente. Esto se llama unbuffered I/O. Con buffered sepueden leer y escribir largas cantidades de caracteres y guardarlas en una
+zona de memoria llamada búfer en lugar de acceder al disco duro, etc. con lo que optimizamos recursos. Son de mayor nivel que FileReader y FileWriter.
+
+PrintWriter
+Clase mejorada desde Java 5. Puede escribir una línea entera en un fichero. El constructor creará el fichero si no existe.
+
+Los constructores con parámetros File o String lanzan una FileNotFoundException. 
+Algunos métodos de PrintWriter(no lanzan Exceptions).
+
+File
+No se usa para leer ni escribir datos si no para crear ficheros, abrirlos, tratar con paths, etc. 
+Oracle lo define como representación abstracta de nombres de ficheros y directorios.
+
+
+
