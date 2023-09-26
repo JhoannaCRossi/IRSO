@@ -32,6 +32,18 @@
       - Clase 12: [Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase12)
       - Clase 13: [Integridad de Datos](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase13)
       - Clase 14: [Diagrama de Tablas](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase14)
+      - Clase 16: [DER y DD](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase16)
+      - Clase 17: [Trabajo de Campo2](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase17)
+      - Clase 18: [Sql - Lenguaje Estructurado de Consulta](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase18)
+      - Clase 19: [Sql - Lenguaje Estructurado de Inserción](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase19)
+      - Clase 21: [Sql - Lenguaje Estructurado de Selección](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase21)
+      - Clase 23: [Sql - Lenguaje Estructurado de Unión](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase23)
+
+
+
+
+
+
 </details>
 <details>
   <summary>Integración de Programación 2022 - JAVA</summary>
