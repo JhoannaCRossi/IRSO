@@ -1,0 +1,58 @@
+CREATE TABLE, DROP TABLE y ALTER TABLE
+
+1)_ Dada la siguiente sentencia CREATE TABLE, determinar si es una construcción correcta justificando la respuesta.
+
+CREATE TABLE pelicula (
+cod_pelicula CHAR(5) NOT NULL, 
+nombre_pelicula CHAR(30) NOT NULL,
+director CHAR(35),
+cod_genero CHAR(2),
+fecha_estreno (DATE),
+FOREIGN KEY (cod_genero) REFERENCES genero)
+PRIMARY KEY (cod_pelicula)
+
+corrijo que fecha_estreno no necesita parentesis para el date,
+ademas esto daria error, cambio que la referencia del foreng key indique la columna a la que hace referencia esa tabla
+
+CREATE TABLE pelicula (
+    cod_pelicula CHAR(5) NOT NULL, 
+    nombre_pelicula CHAR(30) NOT NULL,
+    director CHAR(35),
+    cod_genero CHAR(2),
+    fecha_estreno DATE,
+    PRIMARY KEY (cod_pelicula),
+    FOREIGN KEY (cod_genero) REFERENCES genero(cod_genero));
+2)_ Supongamos que en la tabla del punto 1 (película), mediante una instrucción ALTER TABLE necesitamos modificar el campo cod_ genero a NOT NULL, que debería suceder en los datos para que este cambio sea permitido, además escribir la sentencia ALTER TABLE.
+
+ALTER TABLE pelicula ALTER COLUMN cod_genero SET NOT NULL;
+
+3)_ Dadas las siguientes tablas crearlas mediante sentencias CREATE TABLE, elegir a criterio del alumno las claves primarias, foráneas y cuando los campos deben ser NOT NULL.
+
+Libros 
+
+Cod_libro		NUMBER (8),
+
+Titulo			CHAR(50),
+
+Autor			CHAR(60),
+
+Cod_Editorial	CHAR(2),
+
+Cod_libro NUMBER(8) PRIMARY KEY,
+Titulo CHAR(50) NOT NULL,
+Autor CHAR(60) NOT NULL,
+Cod_Editorial CHAR(2) NOT NULL,
+FOREIGN KEY (Cod_Editorial)
+
+Editorial
+
+Cod_Editorial	CHAR(2),
+
+Nombre_Editorial	CHAR(50).
+
+Cod_Editorial CHAR(2) PRIMARY KEY,
+Nombre_Editorial CHAR(50) NOT NULL
+
+4)_ Eliminar mediante sentencia de SQL la tabla editorial. 
+
+DROP TABLE Editorial;

@@ -1,0 +1,41 @@
+SQL  - Lenguaje Estructurado de Consulta 
+
+Instrucciones Insert y Delete
+
+
+1)_ Realizar las actividades 1 y 2 de la página 126 del módulo de Bases de Datos.
+2)_ Dado el siguiente Diagrama de Tablas y su Diccionario de Datos asociado.
+
+
+Libros = @ISBN + Titulo + Genero + Idioma_Original
+Autores = @Cod_Autor + Apellido + Nombre + Nacionalidad
+Edicion = @ISBN + @Cod_Autor + @Nro_Edición + Idioma
+
+1)_ Aplicando la insctrucción Create Table crear las 3 tablas, tengan en cuenta el orden de la creación, no se olviden de las claves primarias y claves foráneas.
+
+2)_ Aplicación la instrucción insert, insertar 3 registros en cada una de las tablas, tengan en cuenta el orden de la ejecución
+
+3)_ Eliminar aquellos libros cuyo idioma original sea “Japones”, pensar muy bien este punto, puede estar involucrada otra tabla. 
+
+Nota: los datos que ingresan en las tablas no tienen porque ser reales, tampoco es necesario que algún libro tenga idioma original sea “Japones”.
+
+Instrucción Update
+
+
+1)_ Realizar las actividades 1, 2, 3 y 4 de la página 129 del módulo de Bases de Datos.
+
+2)_ Dada la estructura de la siguiente tabla:
+
+Televisores = 	@Cod_Televisor 	number
+			Modelo       		char (30)
+			Stock_Actual		number
+			Stock_Minimo	number
+			Características 	char(256)
+			Pais_Origen		char(2)
+Estado	char(10) puedo tomar dos valores activo o inactivo.
+Aplicando la instrucción UPDATE realizar las siguientes modificaciones.
+a)_ Aumentar en 10 el Stock_Minimo de aquellos televisores cuyo Pais_Origen sea “Argentina”.
+
+b)_ Cambiar a “inactivo” a aquellos Televisores cuyo Pais_Origen sea “Malasia” y que el Stock_Actual se encuentre en 0.
+
+
