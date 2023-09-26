@@ -1,0 +1,85 @@
+SQL  - Lenguaje Estructurado de Consulta
+
+Instrucción Select
+
+Dado el siguiente Diagrama de Tablas, analizamos cada uno de los ejercicios resueltos.
+
+Donde una Película se proyecta en uno o más cines y un cine proyecta una o más películas, por ser una relación de muchos a muchos, cuando construimos el diagrama de tablas aparece la nueva tabla Pelicula – Cine, que contiene las claves primarias de las dos tablas, Cod_Pelicula y Nro_Cine.
+Cine						Peliculas
+Nro_Cine					Cod_Pelicula					
+Nombre					Nombre
+Dirección					Género
+Capacidad					Duración
+						Calificación
+
+A1)_ Mostrar el nombre de todos los cines.
+
+SELECT nombre FROM cine;
+
+A2)_ Mostrar todas las calificaciones que existen para las películas.
+
+SELECT DISTINCT calificación FROM peliculas;
+
+A3)_ Mostrar todas los nombres de las películas que no tengan calificación asignada.
+SELECT Nombre
+FROM Peliculas
+WHERE Calificación IS NULL;
+A4)_ Mostrar todas las películas cuyo Genero sea Terror o Ficción
+SELECT Nombre
+FROM Peliculas
+WHERE Género IN ('Terror', 'Ficción');
+
+A5)_ Mostrar todas las películas cuyo Genero sea Comedia y que su Duración sea mayor a 120 minutos o que el genero sea Documental.
+
+SELECT Nombre
+FROM Peliculas
+WHERE (Género = 'Comedia' AND Duración > 120) OR Género = 'Documental';
+
+A6)_ Mostrar todos los cines cuya capacidad esté entre 500 y 1200 espectadores.
+
+SELECT Nombre
+FROM Cine
+WHERE Capacidad BETWEEN 500 AND 1200;
+
+A7)_ Mostrar todos los cines en donde se proyecta “El Secreto de sus ojos”
+
+SELECT Cine.Nombre
+FROM Cine
+JOIN Pelicula_Cine ON Cine.Nro_Cine = Pelicula_Cine.Nro_Cine
+JOIN Peliculas ON Pelicula_Cine.Cod_Pelicula = Peliculas.Cod_Pelicula
+WHERE Peliculas.Nombre = 'El Secreto de sus ojos';
+
+1)_ Resolver la actividad del módulo de Bases de Datos que se encuentra en la página 131.
+no consegui ninguna actividad en la página 31
+2)_Dado el siguiente Diagrama de Tablas, resolver las siguientes consultas.
+
+Libros 
+Nro_ISBN   (Número único de un libro).
+Titulo
+Cantidad_Páginas
+Fecha_Primera_Edicion
+
+Autores
+Numero_Autor
+Apellido
+Nombre
+Pseudonimo
+Nacionalidad
+
+Libros-Autores
+Nro_ISBN   
+Numero_Autor
+
+a)_ Mostrar el ISBN y el título de todos los libros.
+SELECT Nro_ISBN, Titulo
+FROM Libros;
+b)_ Mostrar todas las nacionalidades de todos los autores sin repetir y ordenadas por Apellido y nombre en forma ascendente.
+SELECT DISTINCT Nacionalidad
+FROM Autores
+ORDER BY Apellido ASC, Nombre ASC;
+c)_ Mostrar todos los libros y sus autores, de los libros mostrar el ISBN  y el Título y de los autores el Nro_Autor, Apellido y Nombre.
+
+SELECT Libros.Nro_ISBN, Libros.Titulo, Autores.Numero_Autor, Autores.Apellido, Autores.Nombre
+FROM Libros
+INNER JOIN Libros_Autores ON Libros.Nro_ISBN = Libros_Autores.Nro_ISBN
+INNER JOIN Autores ON Libros_Autores.Numero_Autor = Autores.Numero_Autor;

@@ -1,0 +1,37 @@
+Union
+
+Esta actividad la encuentran en la pagina 148 del módulo.
+
+1)_ Dadas las siguientes tablas, escribir la sentencia Union entre ambas tablas y mostrar el resultado en otra tabla para todos los campos.
+
+
+2)_ Dadas las siguientes tablas, escribir la sentencia Union All entre ambas tablas y mostrar el resultado en otra tabla para todos los campos.
+
+Donde Fábrica y Proveedor son los nombres de las tablas.
+
+Fabrica
+Nombre
+Medida
+Tornillo Cabeza Frezada
+1 1/4
+Arandela Grover
+¼
+Arandela Plana
+5/16
+
+
+
+Proveedor
+Nombre
+Medida
+Tornillo Cabeza Tanque
+¾
+Arandela Grover
+¼
+Arandela Plana
+3/8
+
+
+3)_Que sucede con esta sentencia UNION si en la tabla Fabrica el campo se llama Medida y en la tabla Proveedor se llama Tamaño?
+
+

@@ -1,0 +1,22 @@
+Interfaz Gráfica
+
+Con el avance del tiempo se han implementado nuevas e innovadores desarrollos en lo que respecta a la materia de lenguajes y plataformas de programación. 
+
+Esto también aplica a su interfaz gráfica. Es de ese modo que en la actualidad podremos cientos de plataformas con excelentes “agregados” dentro de la misma que nos permiten modelar el entorno visual con el que usuario final
+trabajará diariamente. 
+
+Y es por éste motivo que la misma, a la hora del desarrollo, debe ser lo más sencilla y amigable posible, con una cuota adicional de marketinera; a fin de llamar la atención con tonos, formas y gráficos acorde.
+
+Eventos, ActionListener y ActionPerformed
+
+Fonts y JCheckBos
+
+JRadioButton
+
+JRadioButton y Métodos
+
+JComboBox
+
+JComboBox Final
+
+
