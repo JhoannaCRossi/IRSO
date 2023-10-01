@@ -1,0 +1,31 @@
+Consigna 1: Generar un breve proyecto que contenga una variable boolean.
+Module Module1
+    Sub Main()
+        Dim esVerano As Boolean = True
+
+        If esVerano Then
+            Console.WriteLine("¡Es verano! Disfruta del sol y la playa.")
+        Else
+            Console.WriteLine("No es verano. Prepárate para el frío.")
+        End If
+
+        Console.ReadLine()
+    End Sub
+End Module
+
+Consigna 2: ¿Para qué sirve el método ToString? Realice un ejemplo.
+
+El método ToString se utiliza para convertir un objeto en su representación en formato de cadena de caracteres. Sirve para obtener una representación legible por humanos del objeto, que puede ser útil para mostrar información en la interfaz de usuario, escribir registros en un archivo de registro o cualquier otra situación en la que se requiera una representación de cadena del objeto.
+
+Module Module1
+    Sub Main()
+        Dim numero As Integer = 42
+
+        ' Convertir el número en una cadena utilizando el método ToString
+        Dim numeroComoCadena As String = numero.ToString()
+
+        Console.WriteLine("El número como cadena es: " & numeroComoCadena)
+
+        Console.ReadLine()
+    End Sub
+End Module

@@ -1,0 +1,98 @@
+Clase práctica especial Nro.1: Esta clase práctica especial tiene por objeto realizar una aplicación sencilla (muy sencilla) pero que pueda servirles para cubrir alguna necesidad real que tengan en sus trabajos o en su vida personal. 
+La idea es la implementación de un sistema –el que ustedes quieran, ustedes plantearán el enunciado de la aplicación, indicarán qué es lo que debe hacer y cuáles serán los límites de la misma- trabajando con el lenguaje de programación propuesto para la cursada. 
+
+Fecha límite para la presentación de los trabajos: 15/08/23.
+
+NOTA IMPORTANTE: Deben ser aplicaciones sencillas para que puedan realizarlas en un tiempo acotado!!  Suerte!!
+
+Nombre de la Aplicación: Gestor de Tareas
+Funcionalidades: Agregar tareas, ver la lista de tareas, editar tareas, eliminar tareas, marcar como completadas. Guardar las tareas en un archivo.
+Limitaciones: no es una agenda de tareas completa es lo mas sencilla posible.
+
+Imports System.IO
+
+Public Class Form1
+    Dim tareas As New List(Of Tarea)
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CargarTareas()
+    End Sub
+
+    Private Sub AgregarTareaButton_Click(sender As Object, e As EventArgs) Handles AgregarTareaButton.Click
+        Dim nuevaTarea As New Tarea(NombreTareaTextBox.Text, DescripcionTareaTextBox.Text, FechaVencimientoDateTimePicker.Value)
+        tareas.Add(nuevaTarea)
+
+        ActualizarListaTareas()
+
+        NombreTareaTextBox.Clear()
+        DescripcionTareaTextBox.Clear()
+        FechaVencimientoDateTimePicker.Value = DateTime.Now
+    End Sub
+
+    Private Sub MarcarComoCompletadaButton_Click(sender As Object, e As EventArgs) Handles MarcarComoCompletadaButton.Click
+        If ListaTareasListBox.SelectedIndex >= 0 Then
+            tareas(ListaTareasListBox.SelectedIndex).Completada = True
+            ActualizarListaTareas()
+        End If
+    End Sub
+
+    Private Sub EliminarTareaButton_Click(sender As Object, e As EventArgs) Handles EliminarTareaButton.Click
+        If ListaTareasListBox.SelectedIndex >= 0 Then
+            tareas.RemoveAt(ListaTareasListBox.SelectedIndex)
+            ActualizarListaTareas()
+        End If
+    End Sub
+
+    Private Sub ActualizarListaTareas()
+        ListaTareasListBox.Items.Clear()
+        For Each tarea As Tarea In tareas
+            If Not tarea.Completada Then
+                ListaTareasListBox.Items.Add(tarea.ToString())
+            End If
+        Next
+        GuardarTareas()
+    End Sub
+
+    Private Sub CargarTareas()
+        If File.Exists("tareas.txt") Then
+            Using sr As New StreamReader("tareas.txt")
+                While Not sr.EndOfStream
+                    Dim linea As String = sr.ReadLine()
+                    Dim partes() As String = linea.Split(",")
+                    If partes.Length = 3 Then
+                        Dim nuevaTarea As New Tarea(partes(0), partes(1), DateTime.Parse(partes(2)))
+                        tareas.Add(nuevaTarea)
+                    End If
+                End While
+            End Using
+        End If
+        ActualizarListaTareas()
+    End Sub
+
+    Private Sub GuardarTareas()
+        Using sw As New StreamWriter("tareas.txt")
+            For Each tarea As Tarea In tareas
+                sw.WriteLine($"{tarea.Nombre},{tarea.Descripcion},{tarea.FechaVencimiento}")
+            Next
+        End Using
+    End Sub
+End Class
+
+Public Class Tarea
+    Public Property Nombre As String
+    Public Property Descripcion As String
+    Public Property FechaVencimiento As DateTime
+    Public Property Completada As Boolean
+
+    Public Sub New(nombre As String, descripcion As String, fechaVencimiento As DateTime)
+        Me.Nombre = nombre
+        Me.Descripcion = descripcion
+        Me.FechaVencimiento = fechaVencimiento
+        Me.Completada = False
+    End Sub
+
+    Public Overrides Function ToString() As String
+        Return $"{Nombre} - {FechaVencimiento.ToShortDateString()} - {If(Completada, "Completada", "Pendiente")}"
+    End Function
+End Class
+
