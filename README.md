@@ -14,6 +14,13 @@
   
   - [Contenido](https://github.com/JhoannaCRossi/IRSO/tree/master/programacion2)
       - Clase 2: [Ciclos, Ejercicios Propuestos](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase2/EjerciciosPropuestosClase2.txt)
+      - Clase 3: [Tipos de datos, sentencia for](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase3/EjerciciosPropuestosClase3.txt)
+      - Clase 5: [Objetos](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase5/EjerciciosPropuestosClase5.txt)
+      - Clase 6: [Eventos](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase6/EjerciciosPropuestosClase6.txt)
+      - Clase 7: [Práctica](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase7/EjerciciosPropuestosClase7.txt)
+      - Clase 8: [Práctica2](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase8/EjerciciosPropuestosClase8.txt)
+      - Clase 9: [Variables y constantes](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase9/EjerciciosPropuestosClase9.txt)
+      - Clase 10: [Subprogramas](https://github.com/JhoannaCRossi/IRSO/blob/master/programacion2/Clase10/EjerciciosPropuestosClase10.txt)
 </details>
 <details>
   <summary>Base de Datos 2022 - SQL y MYSQL</summary>
@@ -38,11 +45,6 @@
       - Clase 19: [Sql - Lenguaje Estructurado de Inserción](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase19)
       - Clase 21: [Sql - Lenguaje Estructurado de Selección](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase21)
       - Clase 23: [Sql - Lenguaje Estructurado de Unión](https://github.com/JhoannaCRossi/IRSO/tree/master/base_de_datos/clase23)
-
-
-
-
-
 
 </details>
 <details>
