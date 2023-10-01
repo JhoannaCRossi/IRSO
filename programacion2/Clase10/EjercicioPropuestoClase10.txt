@@ -1,0 +1,39 @@
+Práctico 1: Generar un subprograma que permita calcular lo siguiente: 3*x+6. Donde el valor de x debe ser pasado como parámetro.
+
+Sub Calcular(ByVal x As Integer)
+    Dim resultado As Integer
+    resultado = 3 * x + 6
+    Console.WriteLine("El resultado es: " & resultado)
+End Sub
+
+Sub Main()
+    Dim valorX As Integer
+    Console.WriteLine("Ingrese el valor de x:")
+    valorX = Integer.Parse(Console.ReadLine())
+    Calcular(valorX)
+End Sub
+
+Práctico 2: Generar un subprograma que permita imprimir 8 líneas de 10 asteriscos cada una en pantalla. O sea que al final de la corrida del subprograma, deberá quedar lo siguiente en pantalla:
+
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+
+Sub ImprimirAsteriscos()
+    For i As Integer = 1 To 8
+        For j As Integer = 1 To 10
+            Console.Write("*")
+        Next
+        Console.WriteLine()
+    Next
+End Sub
+
+Sub Main()
+    ImprimirAsteriscos()
+End Sub
+ 

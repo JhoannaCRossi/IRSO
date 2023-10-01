@@ -1,0 +1,59 @@
+Teórico 1: Definir objeto y propiedad.
+	Objeto: un objeto es una instancia de una clase.
+	Propiedad: una propiedad es una característica o atributo que describe el estado de un objeto.
+
+Teórico 2: ¿Cuáles son –según vuestra opinión- las ventajas de trabajar en un entorno visual?
+    • Facilidad de comprensión.
+    • Mayor productividad.
+    • Depuración visual.
+    • Colaboración y comunicación.
+    • Acceso a bibliotecas y componentes visuales.
+
+Teórico 3: ¿Qué características tiene un botón de comando? ¿Para qué sirve?
+    • Representación visual
+    • Interactividad del usuario.
+    • Accion asociadad con funcionalidad
+    • Accesibilidad al usuario por diseño.
+Proporciona una representación visual clara de la acción y permite una interacción intuitiva con el sistema.
+Práctico 1: Generar un proyecto/formulario que permita realizar sumas de dos números reales que se ingresan a través de dos cajas de texto, y que el mismo devuelva el resultado en otra caja. El cálculo se realizará cuando se pulsa el botón =.
+
+
+AAAAA
+	+	
+		AAAAA
+	=	-----------
+		RRRRR
+
+Public Class Form1
+    Private Sub btnSumar_Click(sender As Object, e As EventArgs) Handles btnSumar.Click
+        Dim numero1 As Double
+        Dim numero2 As Double
+
+        ' Verificar si los valores ingresados son números válidos
+        If Double.TryParse(txtNumero1.Text, numero1) AndAlso Double.TryParse(txtNumero2.Text, numero2) Then
+            ' Realizar la suma
+            Dim resultado As Double = numero1 + numero2
+
+            ' Mostrar el resultado en el TextBox correspondiente
+            txtResultado.Text = resultado.ToString()
+        Else
+            ' Mostrar un mensaje de error si los valores ingresados no son válidos
+            MessageBox.Show("Por favor, ingresa números válidos en ambas cajas de texto.", "Error de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+End Class
+
+Práctico 2: Generar un proyecto/formulario con un botón y una caja de texto. Cuando se presiona el botón, se incrementa la cuenta que muestra la caja de texto. El valor inicial de la misma es el cero. De modo que la misma trabajará como un acumulador que se irá incrementando de a 1 cada vez que se presione el botón.
+
+Public Class Form1
+    Private cuenta As Integer = 0
+
+    Private Sub btnIncrementar_Click(sender As Object, e As EventArgs) Handles btnIncrementar.Click
+        ' Incrementar la cuenta en 1
+        cuenta += 1
+
+        ' Actualizar el valor en el TextBox
+        txtCuenta.Text = cuenta.ToString()
+    End Sub
+End Class
+

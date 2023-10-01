@@ -1,0 +1,25 @@
+Práctico 1: Indique cuál es la diferencia entre una variable pública y una definida localmente en VB. Dé al menos dos ejemplos de definición de cada una. 
+
+La diferencia principal entre una variable pública y una variable definida localmente en Visual Basic radica en su alcance y visibilidad. Las variables públicas tienen un alcance global y son accesibles desde cualquier parte del programa, mientras que las variables locales tienen un alcance limitado al bloque de código en el que se declaran y no son accesibles desde otros bloques de código.
+
+Puedes tener variables declaradas a nivel modulo, a nivel clase, a nivel de funcion.
+Tipo =>
+Public Class MiClase
+    Public edad As Integer
+End Class
+Dicha variable puede ser accedida dede cualqueir parte del programa
+o =>
+Function MiFuncion() As Double
+    Dim resultado As Double
+    
+End Function
+Dicha variable es solo accedida dentro de ese bloque de codigo
+
+Práctico 2: Indique cuál es la diferencia entre una variable inicializada con un valor y una constante. Dé al menos dos ejemplos de definición de cada una.
+ 
+La diferencia principal entre una variable inicializada con un valor y una constante en Visual Basic radica en su mutabilidad. Una variable inicializada con un valor puede cambiar su valor durante la ejecución del programa, mientras que una constante tiene un valor fijo e inmutable.
+
+Variable inicializada con valor => Dim edad As Integer = 25
+Constante => Const PI As Double = 3.14159
+
+

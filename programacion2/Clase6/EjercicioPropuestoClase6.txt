@@ -1,0 +1,38 @@
+Práctico 1: Generar un proyecto que permita realizar multiplicaciones de dos números reales que se ingresan a través de dos cajas de texto, y que devuelva el resultado en otra caja. El cálculo se realizará cuando se pulsa un botón de comando.
+
+Public Class Form1
+    Private Sub btnMultiplicar_Click(sender As Object, e As EventArgs) Handles btnMultiplicar.Click
+        ' Obtener los números ingresados
+        Dim numero1 As Double = Double.Parse(txtNumero1.Text)
+        Dim numero2 As Double = Double.Parse(txtNumero2.Text)
+
+        ' Realizar la multiplicación
+        Dim resultado As Double = numero1 * numero2
+
+        ' Mostrar el resultado en la caja de texto
+        txtResultado.Text = resultado.ToString()
+    End Sub
+End Class
+
+Práctico 2: Generar un proyecto para poder dividir dos números reales. Considerar que no es posible dividir por 0.
+
+Public Class Form1
+    Private Sub btnDividir_Click(sender As Object, e As EventArgs) Handles btnDividir.Click
+        ' Obtener los números ingresados
+        Dim dividendo As Double = Double.Parse(txtDividendo.Text)
+        Dim divisor As Double = Double.Parse(txtDivisor.Text)
+
+        ' Verificar si el divisor es cero
+        If divisor = 0 Then
+            MessageBox.Show("No es posible dividir por cero.")
+            Return
+        End If
+
+        ' Realizar la división
+        Dim resultado As Double = dividendo / divisor
+
+        ' Mostrar el resultado en la caja de texto
+        txtResultado.Text = resultado.ToString()
+    End Sub
+End Class
+

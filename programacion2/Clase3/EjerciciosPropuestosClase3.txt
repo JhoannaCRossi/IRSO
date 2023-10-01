@@ -1,0 +1,36 @@
+Consigna 1: Generar una instrucción For para dos ejemplos que se les ocurran. ¿Qué diferencias hay entre el While y el For?
+a)
+Public Module Program
+	Public Sub Main(args() As string)
+		Dim arreglo(10) As Integer
+		Dim i As Integer
+		For i = 0 To 9
+			arreglo(i) = i+1
+			Console.WriteLine(“Arreglo(“+i.ToString+”)=” +
+			arreglo(i).ToString)
+		Next
+	End Sub
+End Module
+
+b)
+Public Module Program
+	Public Sub Main(args() As string)
+		Dim j As Integer
+		Dim i As Integer
+		For i = 0 To 2
+			Console.WriteLine("Ciclo externo i = " + i.ToString)
+  		For j = 0 To 2
+    			Console.WriteLine("Ciclo Interno j = " + j.ToString)
+    	Next
+		Next
+	End Sub
+End Module
+
+El for es el ciclo mas usado, tanto por su planteamiento sencillo como porque es ideal para usar en situaciones en que se sabe el limite de iteracciones y el while se usa cuando no sabemos cuanto tiempo se pueda repetir el ciclo del bloque de codigo que tenemos, funciona siempre y cuando se cumpla una condificion booleana que tiene como parametro.
+
+
+Consigna 2: ¿Para qué sirve el Exit For? ¿Para qué sirve el Step en la instrucción For? 
+
+Step sirve para especificar  la cantidad en la que se incrementa la variable i cada vez que se recorre el bucle.
+
+Exit For realiza una salida anticipada del ciclo, y continua con la linea siguiente fuera del ciclo.

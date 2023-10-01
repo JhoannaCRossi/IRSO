@@ -1,0 +1,46 @@
+Práctico 1: Generar un proyecto que permita realizar la división de dos números reales controlando que el denominador no sea cero y que los valores a dividir estén comprendidos entre 0 y 99. 
+
+Public Class Form1
+    Private Sub btnDividir_Click(sender As Object, e As EventArgs) Handles btnDividir.Click
+        ' Obtener los números ingresados
+        Dim dividendo As Double
+        Dim divisor As Double
+
+        ' Validar y obtener el dividendo
+        If Not Double.TryParse(txtDividendo.Text, dividendo) Or dividendo < 0 Or dividendo > 99 Then
+            MessageBox.Show("El dividendo debe ser un número entre 0 y 99.")
+            Return
+        End If
+
+        ' Validar y obtener el divisor
+        If Not Double.TryParse(txtDivisor.Text, divisor) Or divisor < 0 Or divisor > 99 Then
+            MessageBox.Show("El divisor debe ser un número entre 0 y 99.")
+            Return
+        End If
+
+        ' Verificar si el divisor es cero
+        If divisor = 0 Then
+            MessageBox.Show("No es posible dividir por cero.")
+            Return
+        End If
+
+        ' Realizar la división
+        Dim resultado As Double = dividendo / divisor
+
+        ' Mostrar el resultado en la caja de texto
+        txtResultado.Text = resultado.ToString()
+    End Sub
+End Class
+
+Práctico 2: Generar un proyecto con un botón y dos cajas de texto. Cuando se presiona el botón, se copia el contenido de la caja de texto 2 en la caja de texto 1.
+
+Public Class Form1
+    Private Sub btnCopy_Click(sender As Object, e As EventArgs) Handles btnCopy.Click
+        	
+	Dim txtBox =   txtBox1.Text
+         txtBox1.Text = txtBox2.Text
+	txtBox2.Text = txtBox
+
+    End Sub
+End Class
+

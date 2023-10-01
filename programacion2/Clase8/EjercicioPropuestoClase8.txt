@@ -1,0 +1,36 @@
+Práctico 1: Generar un proyecto que permita realizar el siguiente cálculo Z=2*X+3-Y donde X e Y son valores que se ingresan por teclado. Z es el resultado. 
+
+Public Class Form1
+    Private Sub btnCalculated_Click(sender As Object, e As EventArgs) Handles btnCalculated.Click
+        	
+	Dim txt1 =   Integer.Parse(TextBox1.Text)
+	Dim txt2 =   Integer.Parse(TextBox2.Text)
+	Dim txt3 = 2 * txt1 + 3 - txt2
+	TextBox3.Text =  txt3
+	
+    End Sub
+End Class
+Práctico 2: Generar un proyecto que permita leer diez valores que se ingresan por teclado y realizar el promedio de los mismos. Los números son enteros.
+
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Dim valores(9) As Integer
+        Dim suma As Integer = 0
+        Dim promedio As Double
+
+        For i As Integer = 0 To 9
+            Console.WriteLine("Ingrese el valor {0}:", i + 1)
+            valores(i) = Integer.Parse(Console.ReadLine())
+            suma += valores(i)
+        Next
+
+        promedio = suma / 10
+
+        Console.WriteLine("El promedio de los valores ingresados es: {0}", promedio)
+
+        Console.ReadLine()
+    End Sub
+End Module
+
